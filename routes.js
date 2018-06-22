@@ -212,20 +212,6 @@ define([], function () {
             ]
         },
         {
-            path: '/test',
-            component: view('default'),
-            children: [
-                {
-                    path: '',
-                    component: view('test'),
-                    meta: {
-                        breadcrumb: 'Leasing'
-                    },
-                    name: 'test'
-                }
-            ]
-        },
-        {
             path: '/404',
             name: '404',
             component: view('notfoundcomponent')
