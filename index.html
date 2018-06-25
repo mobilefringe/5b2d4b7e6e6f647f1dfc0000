@@ -35,8 +35,6 @@
         <h1 class="accessibility">{{meta_title}}</h1>
         <div id="app" v-cloak>
             <loading-spinner v-if="!dataLoaded"></loading-spinner>
-            
-            
             <div v-if="dataLoaded">
                 <transition-group name="home" tag="div">
                     <header-component :menu_items="menu_items" :social_media="social_media" key="1"></header-component>
@@ -44,7 +42,6 @@
                     <footer-component :social_media="social_media" key="3"></footer-component>\
                 </transition-group>
             </div>
-            
         </div>
         <script src="https://unpkg.com/babel-polyfill@6.26.0/dist/polyfill.min.js"></script>
         <script src="https://unpkg.com/es6-shim@0.35.3/es6-shim.min.js"></script>
