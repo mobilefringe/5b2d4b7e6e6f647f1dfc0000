@@ -758,6 +758,13 @@ $animationDuration: 0.3s;
         transform: scale3d(9, 9, 1);
     }
 }
+.home-enter-active, .home-leave-active {
+    transition: all 1s;
+}
+.home-enter, .home-leave-to {
+    opacity: 0;
+}
+
 .list-item {
     display: inline-block;
     margin-right: 10px;
