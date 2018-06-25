@@ -132,7 +132,7 @@ a {
     text-align: center;
 }
 
-$animationDuration: 0.5s;
+$animationDuration: 0.3s;
 
 /* *** LOADING *** */
 #overlay {
