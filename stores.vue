@@ -52,9 +52,9 @@
             			<div v-masonry transition-duration="0.3s" item-selector=".stores-grid-item" horizontal-order="true">
                             <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut" tag="div">
                                 <div v-masonry-tile  v-for="(store, index) in filteredStores" :key="index" class="stores-grid-item">
-                            	    <div class="store_logo_container">
+                            	    <div class="store_logo_container" v-lazy-container="{ selector: 'img', error: 'xxx.jpg', loading: '//codecloud.cdn.speedyrails.net/sites/5b2d4b7e6e6f647f1dfc0000/image/png/1529516445000/cerritos.png' }">
                             	        <router-link :to="'/stores/'+ store.slug">
-                                			<img class="store_img" v-lazy="store.image_url" alt="">
+                                			<img class="store_img" :src="store.image_url" alt="">
                                 			<div class="store_tag" v-if="store.total_published_promos">-->
             									<div class="store_tag_text">Promotion</div>
             								</div>
