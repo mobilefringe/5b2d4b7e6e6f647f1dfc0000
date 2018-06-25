@@ -52,7 +52,7 @@
             			<div v-masonry transition-duration="0.3s" item-selector=".stores-grid-item" horizontal-order="true">
                             <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut" tag="div">
                                 <div v-masonry-tile  v-for="(store, index) in filteredStores" :key="index" class="stores-grid-item">
-                            	    <div class="store_logo_container" v-lazy-container="{ selector: 'img', error: '/codecloud.cdn.speedyrails.net/sites/5b2d4b7e6e6f647f1dfc0000/image/png/1529516445000/cerritos.png', loading: '//codecloud.cdn.speedyrails.net/sites/5b2d4b7e6e6f647f1dfc0000/image/png/1529516445000/cerritos.png' }">
+                            	    <div class="store_logo_container">
                             	        <router-link :to="'/stores/'+ store.slug">
                                 			<img class="store_img" :src="store.image_url" alt="">
                                 			<div class="store_tag" v-if="store.total_published_promos">-->
@@ -94,7 +94,13 @@
 <script>
     define(["Vue", "vuex", "vue-select", "vue!search-component", "vue-lazy-load", "masonry" , "vue-masonry-plugin"], function(Vue, Vuex, VueSelect, SearchComponent, VueLazyload, masonry, VueMasonryPlugin) {
         Vue.component('v-select', VueSelect.VueSelect);
-        Vue.use(VueLazyload);
+        // Vue.use(VueLazyload);
+        Vue.use(VueLazyload, {
+            preLoad: 1.3,
+            error: 'dist/error.png',
+            loading: '//codecloud.cdn.speedyrails.net/sites/5b2d4b7e6e6f647f1dfc0000/image/png/1529516445000/cerritos.png',
+            attempt: 1
+        });
         Vue.use(VueMasonryPlugin.default);
         return Vue.component("stores-m-component", {
             template: template, // the variable template will be injected
