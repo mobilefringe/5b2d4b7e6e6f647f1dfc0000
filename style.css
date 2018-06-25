@@ -132,6 +132,8 @@ a {
     text-align: center;
 }
 
+$animationDuration: 0.5s;
+
 /* *** LOADING *** */
 #overlay {
     position: fixed;
