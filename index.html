@@ -37,9 +37,9 @@
             <loading-spinner v-if="!dataLoaded"></loading-spinner>
             <div v-if="dataLoaded">
                 <transition name="fade">
-                    <header-component :menu_items="menu_items" :social_media="social_media" v-if="dataLoaded"></header-component>
-                    <router-view v-if="dataLoaded" class="page-content"></router-view>
-                    <footer-component :social_media="social_media" v-if="dataLoaded"></footer-component>\
+                    <header-component :menu_items="menu_items" :social_media="social_media"></header-component>
+                    <router-view class="page-content"></router-view>
+                    <footer-component :social_media="social_media" ></footer-component>\
                 </transition>
             </div>
         </div>
