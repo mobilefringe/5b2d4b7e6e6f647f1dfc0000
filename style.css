@@ -644,7 +644,7 @@ $animationDuration: 0.3s;
     background: url('//codecloud.cdn.speedyrails.net/sites/5b2d4b7e6e6f647f1dfc0000/image/jpeg/1529532304000/insidebanner2.jpg');
     background-position: center top;
     background-repeat: no-repeat;
-    // background-size: cover;
+    background-size: cover;
     background-attachment: fixed;
     div {
         height: 282px;    
