@@ -104,19 +104,10 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                                 name: "Dining",
                                 href: "/stores?category=dining_full_service"
                             },
-                            // {
-                            //     name: "Entertainment",
-                            //     href: "/stores"
-                            // },
-                            // {
-                            //     name: "Specialty",
-                            //     href: "/stores"
-                            // },
                             {
                                 name: "Sales & Promotions",
                                 href: "/promotions"
-                            },
-                            
+                            }
                         ]
                     },
                     {
