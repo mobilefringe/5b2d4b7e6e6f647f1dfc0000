@@ -107,6 +107,8 @@
                     return this.processedCategories;
                 },
                 dropDownCats() {
+                    console.log(this.processedCategories)
+                    var cats = _.filter((this.processedCategories, function(o) { return !o.active; });
                     var cats = _.map(this.processedCategories, 'name');
                     console.log(cats)
                     // cats = _.filter(cats, function(o) { return !o.active; });
