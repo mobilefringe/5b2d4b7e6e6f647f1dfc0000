@@ -88,6 +88,7 @@
             computed: {
                 ...Vuex.mapGetters([
                     'property',
+                    'findRepoByName',
                     'processedStores',
                     "processedCategories",
                     "storesByCategoryName",
