@@ -14,21 +14,21 @@
                             <breadcrumb></breadcrumb>
                             <div v-if="pageContent" v-html="pageContent.body"></div>
                             
-                            <form class="newsletter_form form-horizontal" action="//mobilefringe.createsend.com/t/d/s/vjklyu/" method="post" @submit.prevent="validateBeforeSubmit">
-                                <transition name="fadeIn">
-                                    <div>
-                                        <div id="send_contact_success" class="alert alert-success" role="alert" v-show="formSuccess">
-                                            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                                            <span class="sr-only">Success</span>
-                                            Thank you for contacting us. A member from our team will contact you shortly.
-                                        </div>
-                                        <div id="send_contact_error" class="alert alert-danger" role="alert" v-show="formError">
-                                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                                            <span class="sr-only">Error:</span>
-                                            There was an error when trying to submit your request. Please try again later.
-                                        </div>
-                                    </div>
-                                </transition>
+                            <form class="newsletter_form form-horizontal" action="//mobilefringe.createsend.com/t/d/s/vjklyu/" method="post">
+                                <!--<transition name="fadeIn">-->
+                                <!--    <div>-->
+                                <!--        <div id="send_contact_success" class="alert alert-success" role="alert" v-show="formSuccess">-->
+                                <!--            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>-->
+                                <!--            <span class="sr-only">Success</span>-->
+                                <!--            Thank you for contacting us. A member from our team will contact you shortly.-->
+                                <!--        </div>-->
+                                <!--        <div id="send_contact_error" class="alert alert-danger" role="alert" v-show="formError">-->
+                                <!--            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>-->
+                                <!--            <span class="sr-only">Error:</span>-->
+                                <!--            There was an error when trying to submit your request. Please try again later.-->
+                                <!--        </div>-->
+                                <!--    </div>-->
+                                <!--</transition>-->
                                 <div class="row">
                                     <div class="col-sm-6" >
                                         <label for="fieldfihudt" class="accessibility">First Name</label>
@@ -140,34 +140,34 @@
                         console.log("Error loading data: " + e.message);
                     }
                 },
-                validateBeforeSubmit(form) {
-                    this.$validator.validateAll().then((result) => {
-                        if (result) {
-                            let errors = this.errors;
+                // validateBeforeSubmit(form) {
+                //     this.$validator.validateAll().then((result) => {
+                //         if (result) {
+                //             let errors = this.errors;
                             
-                            if(errors.length > 0) {
-                                console.log("Error");
-                                this.formError = true;
-                            }
-                            else {
-                                form.preventDefault();
-                                console.log("No Error", form);
-                                var vm = this;
-                                $.getJSON(
-                                form.target.action + "?callback=?",
-                                $(form.target).serialize(),
-                                function (data) {
-                                    if (data.Status === 400) {
-                                       vm.formError = true;
-                                    } else { // 200
-                                        vm.formSuccess = true;
-                                    }
-                                });
+                //             if(errors.length > 0) {
+                //                 console.log("Error");
+                //                 this.formError = true;
+                //             }
+                //             else {
+                //                 form.preventDefault();
+                //                 console.log("No Error", form);
+                //                 var vm = this;
+                //                 $.getJSON(
+                //                 form.target.action + "?callback=?",
+                //                 $(form.target).serialize(),
+                //                 function (data) {
+                //                     if (data.Status === 400) {
+                //                       vm.formError = true;
+                //                     } else { // 200
+                //                         vm.formSuccess = true;
+                //                     }
+                //                 });
                                 
-                            }
-                        }
-                    })
-                }
+                //             }
+                //         }
+                //     })
+                // }
             }
         });
     });
