@@ -117,9 +117,9 @@
                     var temp_repo = this.findRepoByName('Dine Banner').images;
                     console.log(temp_repo)
                     if(temp_repo != null) {
-                        this.storeBanner = temp_repo[0];
+                        this.pageBanner = temp_repo[0];
                     } else {
-                        this.storeBanner = "//codecloud.cdn.speedyrails.net/sites/5b2d4b7e6e6f647f1dfc0000/image/jpeg/1529532304000/insidebanner2.jpg";
+                        this.pageBanner = "//codecloud.cdn.speedyrails.net/sites/5b2d4b7e6e6f647f1dfc0000/image/jpeg/1529532304000/insidebanner2.jpg";
                     }
                     
                     this.dataLoaded = true;
