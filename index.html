@@ -36,7 +36,6 @@
             <loading-spinner v-if="!dataLoaded"></loading-spinner>
             <div v-if="dataLoaded">
                 <transition-group name="home" tag="div">
-                    <h1 class="accessibility" key="0">{{meta_title}}</h1>
                     <header-component :menu_items="menu_items" :social_media="social_media" key="1"></header-component>
                     <router-view class="page-content" key="2"></router-view>
                     <footer-component :social_media="social_media" key="3"></footer-component>\
