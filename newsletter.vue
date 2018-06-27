@@ -96,7 +96,7 @@
             },
             created() {
                 this.loadData().then(response => {
-                    var temp_repo = this.findRepoByName('Dine Banner').images;
+                    var temp_repo = this.findRepoByName('Newsletter Banner').images;
                     if(temp_repo != null) {
                         this.pageBanner = temp_repo[0];
                     } else {
@@ -117,7 +117,7 @@
                 loadData: async function () {
                     this.property.mm_host = this.property.mm_host.replace("http:", "");
                     try {
-                        let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "/pages/cerritos-newsletter.json"})]);
+                        let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "/pages/cerritos-newsletter.json"}), this.$store.dispatch("getData", "repos")]);
                         return results;
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
