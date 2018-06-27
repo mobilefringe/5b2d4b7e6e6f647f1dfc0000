@@ -126,7 +126,8 @@
                     'property',
                     'timezone',
                     'processedEvents',
-                    'processedPromos'
+                    'processedPromos',
+                    'findRepoByName'
                 ]),
                 eventList: function events() {
                     var events = _.orderBy(this.processedEvents, function (o) { return o.start_date });
