@@ -103,16 +103,12 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                             {
                                 name: "Dining",
                                 href: "/dine"
-                            },
-                            {
-                                name: "Sales & Promotions",
-                                href: "/promotions"
                             }
                         ]
                     },
                     {
-                        name: "Events",
-                        href: "/events"
+                        name: "Events & Promotions",
+                        href: "/events-and-promotions"
                     },
                     {
                         name: "Location",
@@ -123,18 +119,10 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                         id: "menu2",
                         href: "#",
                         sub_menu: [
-                            // {
-                            //     name: "Center Information",
-                            //     href: "/center-information"
-                            // },
                             {
                                 name: "Contact Us",
                                 href: "/contact-us"
                             },
-                            // {
-                            //     name: "Coupons",
-                            //     href: "/coupons"
-                            // },
                             {
                                 name: "Leasing",
                                 href: "/leasing"
@@ -152,21 +140,11 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                         url: "https://www.facebook.com/ShopCerritos",
                         iconClass: "fab fa-facebook"
                     },
-                    // {
-                    //     name: "Twitter",
-                    //     url: "https://twitter.com",
-                    //     iconClass: "fab fa-twitter"
-                    // },
                     {
                         name: "Instagram",
                         url: "https://www.instagram.com/shopcerritos",
                         iconClass: "fab fa-instagram"
-                    },
-                    // {
-                    //     name: "SnapChat",
-                    //     url: "https://www.snapchat.com",
-                    //     iconClass: "fab fa-snapchat-ghost"
-                    // }
+                    }
                 ],
             }
         },
