@@ -92,7 +92,7 @@
 				    console.log(this.banner)
 					this.currentEvent = this.findEventBySlug(this.id);
 					if (this.currentEvent === null || this.currentEvent === undefined) {
-						this.$router.replace({ name: '404' });
+						this.$router.replace({ path: '/events-and-promotions' });
 					}
 					this.$breadcrumbs[0].path = "/events-and-promotions"
 					this.$breadcrumbs[1].meta.breadcrumb = this.currentEvent.name
