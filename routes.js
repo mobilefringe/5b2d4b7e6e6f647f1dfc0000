@@ -106,11 +106,11 @@ define([], function () {
                 breadcrumb: 'Events',
             },
             children: [
-                {
-                    path: '',
-                    component: view('events'),
-                    name: 'events'
-                },
+                // {
+                //     path: '',
+                //     component: view('events'),
+                //     name: 'events'
+                // },
                 {
                     path: ':id',
                     component: view('event_details'),
@@ -119,6 +119,20 @@ define([], function () {
                     },
                     name: 'eventDetails',
                     props: true
+                }
+            ]
+        },
+        {
+            path: '/events-and-promotions',
+            component: view('default'),
+            meta: {
+                breadcrumb: 'Events & Promotions',
+            },
+            children: [
+                {
+                    path: '',
+                    component: view('events_and_promotions'),
+                    name: 'events_and_promotions'
                 }
             ]
         },
@@ -147,6 +161,29 @@ define([], function () {
                         breadcrumb: 'Page Details',
                     },
                     name: 'pageDetails',
+                    props: true
+                }
+            ]
+        },
+        {
+            path: '/promotions',
+            component: view('default'),
+            meta: {
+                breadcrumb: 'Sales & Promotions',
+            },
+            children: [
+                // {
+                //     path: '',
+                //     component: view('promotions'),
+                //     name: 'promotions'
+                // },
+                {
+                    path: ':id',
+                    component: view('promotion_details'),
+                    meta: {
+                        breadcrumb: 'Promotion Details',
+                    },
+                    name: 'promotionDetails',
                     props: true
                 }
             ]
@@ -199,30 +236,7 @@ define([], function () {
                             name: 'map'
                         }
                     ]
-                },
-                {
-                    path: '/promotions',
-                    component: view('default'),
-                    meta: {
-                        breadcrumb: 'Sales & Promotions',
-                    },
-                    children: [
-                        {
-                            path: '',
-                            component: view('promotions'),
-                            name: 'promotions'
-                        },
-                        {
-                            path: ':id',
-                            component: view('promotion_details'),
-                            meta: {
-                                breadcrumb: 'Promotion Details',
-                            },
-                            name: 'promotionDetails',
-                            props: true
-                        }
-                    ]
-                },
+                }
             ]
         },
         {
