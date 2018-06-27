@@ -70,7 +70,7 @@
         Vue.component('social-sharing', SocialSharing);
 		return Vue.component("event-details-component", {
 			template: template, // the variable template will be injected,
-			props: ['id'],
+			props: ['id', 'banner'],
 			data: function() {
 				return {
 					dataLoaded: false,
@@ -94,8 +94,7 @@
 					console.error("Could not retrieve data from server. Please check internet connection and try again.");
 				});
 				
-				this.$store.dispatch("getData", "repos"), this.$store.dispatch("getData", "events").then(response => {
-				    console.log(response)
+				this.$store.dispatch("getData", "events").then(response => {
 					this.currentEvent = this.findEventBySlug(this.id);
 					if (this.currentEvent === null || this.currentEvent === undefined) {
 						this.$router.replace({ name: '404' });
