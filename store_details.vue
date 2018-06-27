@@ -68,20 +68,18 @@
                                 <div class="row margin_40">
                                     <div class="col-md-6" v-if="storePromotions" v-for="item in storePromotions">
                                         <div class="feature_item_container">
-                                	        
-                                			<img :src="item.image_url" :alt="item.name">
-                            				<div class="details">
-                    					    	<span class="title">
-                    					            <h3>{{ item.name }}</h3>
-                					            </span>
-                        					    <span class="info">
-                    					            <p><span v-if="isMultiDay(item)">{{ item.start_date | moment("MMMM D", timezone)}} - {{ item.end_date | moment("MMMM D", timezone)}}</span><span v-else>{{ item.start_date | moment("MMMM D", timezone)}}</span></p>
-                    					            <router-link class="tile" :to="{ name: 'promotionDetails', params: { id: item.slug }}">
-                    					                <p>View Promotion Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
-                    					           </router-link>
-                					            </span>
-                            				</div>
-                                    		
+                                	        <router-link class="tile" :to="{ name: 'promotionDetails', params: { id: item.slug }}">
+                                    			<img :src="item.image_url" :alt="item.name">
+                                				<div class="details">
+                        					    	<span class="title">
+                        					            <h3>{{ item.name }}</h3>
+                    					            </span>
+                            					    <span class="info">
+                        					            <p><span v-if="isMultiDay(item)">{{ item.start_date | moment("MMMM D", timezone)}} - {{ item.end_date | moment("MMMM D", timezone)}}</span><span v-else>{{ item.start_date | moment("MMMM D", timezone)}}</span></p>
+                        					            <p>View Promotion Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
+                    					            </span>
+                                				</div>
+                                    		</router-link>
                                 	    </div>
                                     </div>
                                 </div>
