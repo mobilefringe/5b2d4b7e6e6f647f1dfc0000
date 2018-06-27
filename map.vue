@@ -79,7 +79,7 @@
                     if(temp_repo != null) {
                         this.pageBanner = temp_repo[0];
                     } else {
-                        this.pageBanner = "http://via.placeholder.com/1920x400/4f6726/4f6726";
+                        this.pageBanner = "//codecloud.cdn.speedyrails.net/sites/5b2d4b7e6e6f647f1dfc0000/image/jpeg/1529532304000/insidebanner2.jpg";
                     }
                     
                     this.dataLoaded = true;
