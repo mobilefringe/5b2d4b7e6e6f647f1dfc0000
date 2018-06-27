@@ -80,20 +80,14 @@
 				}
 			},
 			created() {
-			    this.loadData().then(response => {
-			        var temp_repo = this.findRepoByName('Events Banner').images;
-			        console.log(temp_repo)
-                    if(temp_repo != null) {
-                        this.pageBanner = temp_repo[0];
-                    } else {
-                        this.pageBanner = {
-                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5b2d4b7e6e6f647f1dfc0000/image/jpeg/1529532304000/insidebanner2.jpg"
-                        }
+                if(this.banner != null) {
+                    this.pageBanner = this.banner;
+                } else {
+                    this.pageBanner = {
+                        "image_url": "//codecloud.cdn.speedyrails.net/sites/5b2d4b7e6e6f647f1dfc0000/image/jpeg/1529532304000/insidebanner2.jpg"
                     }
-			    }, error => {
-					console.error("Could not retrieve data from server. Please check internet connection and try again.");
-				});
-				
+                }
+			    
 				this.$store.dispatch("getData", "events").then(response => {
 				    console.log(this.banner)
 					this.currentEvent = this.findEventBySlug(this.id);
@@ -102,6 +96,7 @@
 					}
 					this.$breadcrumbs[0].path = "/events-and-promotions"
 					this.$breadcrumbs[1].meta.breadcrumb = this.currentEvent.name
+					
 					this.dataLoaded = true;
 				}, error => {
 					console.error("Could not retrieve data from server. Please check internet connection and try again.");
@@ -127,19 +122,10 @@
 					'property',
 					'timezone',
 					'processedEvents',
-					'findEventBySlug',
-					'repos',
-					'findRepoByName'
+					'findEventBySlug'
 				])
 			},
 			methods: {
-			    loadData: async function () {
-                    try {
-                        let results = await Promise.all([this.$store.dispatch("getData", "repos")]);
-                    } catch (e) {
-                        console.log("Error loading data: " + e.message);
-                    }
-                },
 				isMultiDay(currentEvent) {
 					var timezone = this.timezone
 					var start_date = moment(currentEvent.start_date).tz(timezone).format("MM-DD-YYYY")
