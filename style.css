@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto+Condensed:400,700');
 
 /* *** COLOURS *** */
@@ -131,8 +132,6 @@ a {
 .center {
     text-align: center;
 }
-
-$animationDuration: 0.3s;
 
 /* *** LOADING *** */
 #overlay {
@@ -641,7 +640,7 @@ $animationDuration: 0.3s;
 .inside_page_header {
     margin-bottom: 24px;
     height: 282px;
-    background: url('//codecloud.cdn.speedyrails.net/sites/5b2d4b7e6e6f647f1dfc0000/image/jpeg/1529532304000/insidebanner2.jpg');
+    background: url('//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/jpeg/1529532304000/insidebanner2.jpg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -758,13 +757,9 @@ $animationDuration: 0.3s;
         transform: scale3d(9, 9, 1);
     }
 }
-.home-enter-active, .home-leave-active {
-    transition: all 1s;
+.change_color {
+    background-color: $secondary;
 }
-.home-enter, .home-leave-to {
-    opacity: 0;
-}
-
 .list-item {
     display: inline-block;
     margin-right: 10px;
@@ -1469,9 +1464,9 @@ $anim-speed: 0.3s;
         height: 21px;
         background-color: $primary;
         .store_tag_text {
-            padding: 5px 0;
+            padding: 4px 0;
             width: 108px;
-            font-size: 0.5625rem;
+            font-size: 0.65rem;
             color: #FFF;
             line-height: normal;
             letter-spacing: 0.6px;
