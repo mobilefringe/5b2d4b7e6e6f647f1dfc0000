@@ -13,21 +13,22 @@
                         <div class="col-md-12">
                             <breadcrumb></breadcrumb>
                             <div v-if="pageContent" v-html="pageContent.body"></div>
-                            <transition name="fadeIn">
-                                <div>
-                                    <div id="send_contact_success" class="alert alert-success" role="alert" v-show="formSuccess">
-                                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                                        <span class="sr-only">Success</span>
-                                        Thank you for contacting us. A member from our team will contact you shortly.
-                                    </div>
-                                    <div id="send_contact_error" class="alert alert-danger" role="alert" v-show="formError">
-                                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                                        <span class="sr-only">Error:</span>
-                                        There was an error when trying to submit your request. Please try again later.
-                                    </div>
-                                </div>
-                            </transition>
+                            
                             <form class="newsletter_form form-horizontal" action="//mobilefringe.createsend.com/t/d/s/vjklyu/" method="post" @submit.prevent="validateBeforeSubmit">
+                                <transition name="fadeIn">
+                                    <div>
+                                        <div id="send_contact_success" class="alert alert-success" role="alert" v-show="formSuccess">
+                                            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                                            <span class="sr-only">Success</span>
+                                            Thank you for contacting us. A member from our team will contact you shortly.
+                                        </div>
+                                        <div id="send_contact_error" class="alert alert-danger" role="alert" v-show="formError">
+                                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                                            <span class="sr-only">Error:</span>
+                                            There was an error when trying to submit your request. Please try again later.
+                                        </div>
+                                    </div>
+                                </transition>
                                 <div class="row">
                                     <div class="col-sm-6" >
                                         <label for="fieldfihudt" class="accessibility">First Name</label>
