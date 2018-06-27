@@ -82,6 +82,7 @@
 			created() {
 			    this.loadData().then(response => {
 			        var temp_repo = this.findRepoByName('Events Banner').images;
+			        consoel.log(temp_repo)
                     if(temp_repo != null) {
                         this.pageBanner = temp_repo[0];
                     } else {
