@@ -109,7 +109,7 @@
                 dropDownCats() {
                     var cats = _.map(this.processedCategories, 'name');
                     console.log(cats)
-                    cats = _.filter(cats, function(o) { return !o.active; });
+                    // cats = _.filter(cats, function(o) { return !o.active; });
                     cats.unshift('All');
                     return cats;
                 },
