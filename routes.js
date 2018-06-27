@@ -133,6 +133,15 @@ define([], function () {
                     path: '',
                     component: view('events_and_promotions'),
                     name: 'events_and_promotions'
+                },
+                {
+                    path: ':id',
+                    component: view('promotion_details'),
+                    meta: {
+                        breadcrumb: 'Promotion Details',
+                    },
+                    name: 'promotionDetails',
+                    props: true
                 }
             ]
         },
@@ -169,7 +178,7 @@ define([], function () {
             path: '/promotions',
             component: view('default'),
             meta: {
-                breadcrumb: 'Sales & Promotions',
+                breadcrumb: 'Events & Promotions',
             },
             children: [
                 // {
