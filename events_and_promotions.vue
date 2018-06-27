@@ -112,7 +112,6 @@
             created (){
                 this.loadData().then(response => {
                     var temp_repo = this.findRepoByName('Events Banner').images;
-                    console.log(temp_repo)
                     if(temp_repo != null) {
                         this.pageBanner = temp_repo[0];
                     } else {
@@ -120,7 +119,6 @@
                             "image_url": "//codecloud.cdn.speedyrails.net/sites/5b2d4b7e6e6f647f1dfc0000/image/jpeg/1529532304000/insidebanner2.jpg"
                         }
                     }
-                    console.log(this.pageBanner)
                     this.dataLoaded = true;
                 });
             },
