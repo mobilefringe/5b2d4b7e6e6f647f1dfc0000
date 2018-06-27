@@ -21,7 +21,7 @@
         		        </div>
         		    </div>
                     <div v-if="toggleEvents">
-                        <div v-if="eventList" v-for="(events, key) in eventList" class="col-md-12" >
+                        <div v-if="eventList" v-for="(events, key) in eventList">
                             <div class="row">
                                 <div class="col-md-12">
                                     <h3 class="event_date_heading">{{ key }}</h3> 
