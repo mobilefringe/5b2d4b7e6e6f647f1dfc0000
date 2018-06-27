@@ -103,14 +103,9 @@ define([], function () {
             path: '/events',
             component: view('default'),
             meta: {
-                breadcrumb: 'Events',
+                breadcrumb: 'Events & Promotions',
             },
             children: [
-                // {
-                //     path: '',
-                //     component: view('events'),
-                //     name: 'events'
-                // },
                 {
                     path: ':id',
                     component: view('event_details'),
