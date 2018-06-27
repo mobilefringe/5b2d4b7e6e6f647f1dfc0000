@@ -125,27 +125,10 @@
                 });
             },
             watch: {
-                $route: function() {
-                    this.query = this.$route.query.category
-                    if(this.query == "dining_full_service"){
-                      this.selectedCat = "Dining Full Service";
-                      this.filterByCategory;
-                    } else {
-                        this.selectedCat = "All";
-                        this.filteredStores = this.allStores;
-                    }    
-                },
                 selectedCat: function() {
                     this.$nextTick(function() {
                         Vue.prototype.$redrawVueMasonry();
                     });    
-                },
-                windowWidth: function() {
-                    if (this.windowWidth <= 768) {
-                        this.mobile_store = true;
-                    } else {
-                        this.mobile_store = false;
-                    }
                 }
             },
             mounted() {
