@@ -1,6 +1,6 @@
 <template>
     <header>
-        <h1 class="accessibility" key="0">{{ property.name }}</h1>
+        <h1 class="accessibility">{{ property.name }}</h1>
         <section id="header" class="sticky">
             <div class="main_container">
                 <div class="row">
