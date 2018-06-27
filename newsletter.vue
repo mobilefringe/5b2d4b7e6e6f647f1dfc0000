@@ -72,6 +72,7 @@
             data: function() {
                 return {
                     dataLoaded: true,
+                    pageBanner: null,
                     pageContent: null,
                     siteInfo: site,
                     form_data : {},
