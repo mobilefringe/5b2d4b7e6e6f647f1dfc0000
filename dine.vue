@@ -115,6 +115,7 @@
             created (){
                 this.loadData().then(response => {
                     var temp_repo = this.findRepoByName('Dine Banner').images;
+                    consoel.log(temp_repo)
                     if(temp_repo != null) {
                         this.storeBanner = temp_repo[0];
                     } else {
