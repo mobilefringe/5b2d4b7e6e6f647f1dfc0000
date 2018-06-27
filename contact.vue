@@ -104,7 +104,7 @@
             },
             created() {
                 this.loadData().then(response => {
-                    var temp_repo = this.findRepoByName('Contact Banner').images;
+                    var temp_repo = this.findRepoByName('Contact Us Banner').images;
                     if(temp_repo != null) {
                         this.pageBanner = temp_repo[0];
                     } else {
@@ -119,7 +119,6 @@
             computed: {
                 ...Vuex.mapGetters([
                     'property',
-                    'repos',
                     'findRepoByName'
                 ])
             },
