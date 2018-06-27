@@ -270,7 +270,7 @@ a {
         .menu_item {
             margin: 0;
         	padding: 6px 60px 24px 0;
-            min-width: 136px;
+            // min-width: 136px;
             display: inline-block;
         	position: relative;
         	line-height: 0.8125rem;
