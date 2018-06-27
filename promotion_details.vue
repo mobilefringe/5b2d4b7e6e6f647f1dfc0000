@@ -81,7 +81,7 @@
 				this.$store.dispatch("getData", "promotions").then(response => {
 					this.currentPromo = this.findPromoBySlug(this.id);
 					if (this.currentPromo === null || this.currentPromo === undefined) {
-						this.$router.replace({ path: '/promotions' });
+						this.$router.replace({ path: '/events-and-promotions' });
 					}
 					this.$breadcrumbs[0].path = "/events-and-promotions"
 					this.$breadcrumbs[1].meta.breadcrumb = this.currentPromo.name
