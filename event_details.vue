@@ -95,7 +95,7 @@
 				});
 				
 				this.$store.dispatch("getData", "repos"), this.$store.dispatch("getData", "events").then(response => {
-				    consoel.log(response)
+				    console.log(response)
 					this.currentEvent = this.findEventBySlug(this.id);
 					if (this.currentEvent === null || this.currentEvent === undefined) {
 						this.$router.replace({ name: '404' });
