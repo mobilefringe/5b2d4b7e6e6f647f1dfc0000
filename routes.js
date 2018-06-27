@@ -172,11 +172,6 @@ define([], function () {
                 breadcrumb: 'Events & Promotions',
             },
             children: [
-                // {
-                //     path: '',
-                //     component: view('promotions'),
-                //     name: 'promotions'
-                // },
                 {
                     path: ':id',
                     component: view('promotion_details'),
