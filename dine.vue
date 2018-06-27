@@ -100,7 +100,7 @@
             data: function() {
                 return {
                     dataLoaded: false,
-                    storeBanner : null,
+                    pageBanner : null,
                     windowWidth: 0,
                     selectedCat: null,
                     filteredStores: null,
