@@ -23,7 +23,7 @@
                                     <span v-else>{{ currentEvent.start_date | moment("MMMM D", timezone)}}</span>
                                 </p>
                                 <p class="event_details_dates">
-                                    <span v-if="currentEvent.tags && event.tags.length >0">{{event.tags[0]}}</span>
+                                    <span v-if="currentEvent.tags && currentEvent.tags.length >0">{{currentEvent.tags[0]}}</span>
                                 </p>
                                 <div class="event_desc event_details" v-html="currentEvent.rich_description"></div>
                             </div>
