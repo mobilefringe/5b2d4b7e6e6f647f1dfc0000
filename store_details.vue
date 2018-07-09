@@ -134,6 +134,7 @@
             data: function () {
                 return {
                     dataLoaded: false,
+                    pageBanner: null,
                     currentStore: null,
                     storeHours: null,
                     map: null,
