@@ -107,6 +107,7 @@
             created() {
                 this.$store.dispatch("getData", "contests").then(response => {
                     this.currentContest = this.findContestByShowOnSlug('cerritos-contest');
+                    console.log(this.currentContest)
                     this.dataLoaded = true;
                 }, error => {
                     console.error("Could not retrieve data from server. Please check internet connection and try again.");
