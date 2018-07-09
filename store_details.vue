@@ -226,6 +226,7 @@
                     'timezone',
                     'processedStores',
                     'findStoreBySlug',
+                    'findRepoByName',
                     'findHourById',
                     'findPromoById',
                     'findEventById',
