@@ -140,6 +140,7 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
+                    'findRepoByName',
                     'findContestBySlug',
                     'findContestByShowOnSlug'
                 ]),
