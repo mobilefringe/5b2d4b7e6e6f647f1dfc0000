@@ -107,7 +107,7 @@
             },
             created() {
                 this.$store.dispatch("getData", "repos").then(response => {
-                    var temp_repo = this.findRepoByName('Dine Banner').images;
+                    var temp_repo = this.findRepoByName('Events Banner').images;
                     if(temp_repo != null) {
                         this.pageBanner = temp_repo[0];
                     } else {
