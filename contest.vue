@@ -106,6 +106,7 @@
             },
             created() {
                 this.$store.dispatch("getData", "contests").then(response => {
+                    console.log(response)
                     this.currentContest = this.findContestByShowOnSlug('cerritos-contest');
                     console.log(this.currentContest)
                     this.dataLoaded = true;
