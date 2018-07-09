@@ -133,7 +133,7 @@
                         $('html, body').animate({
                     		scrollTop: position
                     	}, 500, 'linear');
-                    },700)
+                    }, 700)
                 }
             },
             computed: {
