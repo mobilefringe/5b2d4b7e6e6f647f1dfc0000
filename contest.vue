@@ -130,7 +130,7 @@
                 formSuccess() {
                     setTimeout(function(){
                         console.log($("#send_contact_success"), $("#send_contact_success").offset());
-                        var position = $("#send_contact_success").offset().top - 135;
+                        var position = $("#send_contact_success").offset().top - 250;
                         $('html, body').animate({
                     		scrollTop: position
                     	}, 500, 'linear');
