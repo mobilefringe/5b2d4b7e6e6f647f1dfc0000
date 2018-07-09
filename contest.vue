@@ -90,7 +90,6 @@
 <script>
     define(["Vue", "vuex", "jquery", "axios", "vee-validate"], function(Vue, Vuex, $, axios, VeeValidate) {
         Vue.use(VeeValidate);
-        console.log(VueScrollTo)
         return Vue.component("contest-component", {
             template: template, // the variable template will be injected
             data: function() {
