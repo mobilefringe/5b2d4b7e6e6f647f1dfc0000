@@ -105,6 +105,12 @@
                 }
             },
             created() {
+                this.$store.dispatch("getData", "repos").then(response => {
+                
+                    
+                }, error => {
+                    console.error("Could not retrieve data from server. Please check internet connection and try again.");
+                }); 
                 this.$store.dispatch("getData", "contests").then(response => {
                     this.currentContest = this.findContestByShowOnSlug('cerritos-cerritos-towne-center-contest');
                     this.dataLoaded = true;
