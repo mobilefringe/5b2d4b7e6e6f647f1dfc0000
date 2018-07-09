@@ -148,7 +148,7 @@
 				shareURL(slug) {
                     var share_url = window.location.href
                     return share_url
-                },
+                }
 			}
 		});
 	});
