@@ -107,7 +107,7 @@
             created() {
                 this.$store.dispatch("getData", "contests").then(response => {
                     console.log(response)
-                    this.currentContest = this.findContestByShowOnSlug('cerritos-contest');
+                    this.currentContest = this.findContestByShowOnSlug('cerritos-cerritos-towne-center-contest');
                     console.log(this.currentContest)
                     this.dataLoaded = true;
                 }, error => {
