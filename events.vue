@@ -5,7 +5,7 @@
             <div v-if="dataLoaded" v-cloak>
                 <div class="inside_page_header">
                     <div class="main_container position_relative">
-                        <h2>Events</h2>
+                        <h2>Events & Promotions</h2>
                     </div>
                 </div>
                 <div class="main_container">
