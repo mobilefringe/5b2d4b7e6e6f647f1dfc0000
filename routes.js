@@ -204,11 +204,6 @@ define([], function () {
                 }
             ]
         },
-        // {
-        //     path: '/404',
-        //     name: '404',
-        //     component: view('notfoundcomponent')
-        // },
         {
             path: '*',
             redirect: '/'
