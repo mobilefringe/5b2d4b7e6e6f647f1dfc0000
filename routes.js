@@ -112,6 +112,15 @@ define([], function () {
                     },
                     name: 'eventDetails',
                     props: true
+                },
+                {
+                    path: '/promotions/:id',
+                    component: view('promotion_details'),
+                    meta: {
+                        breadcrumb: 'Promotion Details',
+                    },
+                    name: 'promotionDetails',
+                    props: true
                 }
             ]
         },
@@ -144,24 +153,24 @@ define([], function () {
                 }
             ]
         },
-        {
-            path: '/promotions',
-            component: view('default'),
-            meta: {
-                breadcrumb: 'Events & Promotions',
-            },
-            children: [
-                {
-                    path: ':id',
-                    component: view('promotion_details'),
-                    meta: {
-                        breadcrumb: 'Promotion Details',
-                    },
-                    name: 'promotionDetails',
-                    props: true
-                }
-            ]
-        },
+        // {
+        //     path: '/promotions',
+        //     component: view('default'),
+        //     meta: {
+        //         breadcrumb: 'Events & Promotions',
+        //     },
+        //     children: [
+        //         {
+        //             path: ':id',
+        //             component: view('promotion_details'),
+        //             meta: {
+        //                 breadcrumb: 'Promotion Details',
+        //             },
+        //             name: 'promotionDetails',
+        //             props: true
+        //         }
+        //     ]
+        // },
         {
             path: '/stores',
             component: view('default'),
