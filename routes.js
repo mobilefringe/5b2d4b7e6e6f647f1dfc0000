@@ -76,7 +76,7 @@ define([], function () {
         },
         {
             path: '/events',
-            component: view('default'),
+            // component: view('default'),
             meta: {
                 breadcrumb: 'Events & Promotions',
             },
