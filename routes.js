@@ -74,24 +74,24 @@ define([], function () {
                 }
             ]
         },
-        {
-            path: '/events',
-            // component: view('default'),
-            meta: {
-                breadcrumb: 'Events & Promotions',
-            },
-            children: [
-                {
-                    path: ':id',
-                    component: view('event_details'),
-                    meta: {
-                        breadcrumb: 'Event Details',
-                    },
-                    name: 'eventDetails',
-                    props: true
-                }
-            ]
-        },
+        // {
+        //     path: '/events',
+        //     // component: view('default'),
+        //     meta: {
+        //         breadcrumb: 'Events & Promotions',
+        //     },
+        //     children: [
+        //         {
+        //             path: ':id',
+        //             component: view('event_details'),
+        //             meta: {
+        //                 breadcrumb: 'Event Details',
+        //             },
+        //             name: 'eventDetails',
+        //             props: true
+        //         }
+        //     ]
+        // },
         {
             path: '/events-and-promotions',
             component: view('default'),
@@ -103,6 +103,15 @@ define([], function () {
                     path: '',
                     component: view('events_and_promotions'),
                     name: 'events_and_promotions'
+                },
+                {
+                    path: '/events/:id',
+                    component: view('event_details'),
+                    meta: {
+                        breadcrumb: 'Event Details',
+                    },
+                    name: 'eventDetails',
+                    props: true
                 }
             ]
         },
