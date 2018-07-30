@@ -168,17 +168,17 @@
                 },
                 dropDownCats() {
                     var vm = this;
-                    var store_cats = _.filter(this.processedStores, function(o) { return _.includes(o.categories, vm.dineFilter) });
-                    var cats = [];
-                    _.forEach(store_cats, function(value, key) {
-                        _.forEach(value.categories, function(category, key) {
-                            var current_category = vm.findCategoryById(category)
-                            if(!_.includes(cats, current_category.name) && category != vm.dineFilter) {
+                    // var store_cats = _.filter(this.processedStores, function(o) { return _.includes(o.categories, vm.dineFilter) });
+                    // var cats = [];
+                    // _.forEach(store_cats, function(value, key) {
+                    //     _.forEach(value.categories, function(category, key) {
+                    //         var current_category = vm.findCategoryById(category)
+                    //         if(!_.includes(cats, current_category.name) && category != vm.dineFilter) {
                                 
-                                cats.push(current_category.name)
-                            }
-                        });
-                    });
+                    //             cats.push(current_category.name)
+                    //         }
+                    //     });
+                    // });
                     cats = cats.sort();
                     cats.unshift('All Cuisine');
                     return cats;
