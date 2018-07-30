@@ -203,7 +203,7 @@
                     if (category_id == "All") {
                         this.filteredStores = this.allStores;
                     } else {
-                        var find = this.findCategoryById;
+                        var find = this.findSubcategoryById;
                         var filtered = _.filter(this.allStores, function(o) {
                             return _.indexOf(o.categories, _.toNumber(category_id)) > -1;
                         });
