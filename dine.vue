@@ -169,7 +169,7 @@
                 dropDownCats() {
                     var vm = this;
                     // var store_cats = _.filter(this.processedStores, function(o) { return _.includes(o.categories, vm.dineFilter) });
-                    // var cats = [];
+                    
                     // _.forEach(store_cats, function(value, key) {
                     //     _.forEach(value.categories, function(category, key) {
                     //         var current_category = vm.findCategoryById(category)
@@ -179,6 +179,8 @@
                     //         }
                     //     });
                     // });
+                    var dining_cat =  _.filter(this.processedCategories, function(o) { return o.name == "Dining"});
+                    console.log("dining_cat",dining_cat);
                     cats = cats.sort();
                     cats.unshift('All Cuisine');
                     return cats;
