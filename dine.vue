@@ -180,7 +180,7 @@
                     //         }
                     //     });
                     // });
-                    var dining_cat =  _.filter(this.processedCategories, function(o) { return o.name == "Dining"});
+                    var dining_cat =  _.find(this.processedCategories, function(o) { return o.name == "Dining"});
                     console.log("dining_cat",dining_cat);
                     var cats = [];
                     cats = cats.sort();
