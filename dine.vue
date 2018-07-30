@@ -194,8 +194,8 @@
                 },
                 filterByCategory() {
                     category_id = this.selectedCat;
-                    if (category_id == "All" || category_id == null || category_id == undefined) {
-                        category_id = "All";
+                    if (category_id == "All Cuisine" || category_id == null || category_id == undefined) {
+                        category_id = "All Cuisine";
                     } else {
                         category_id = this.findSubcategoryByName(category_id).id;
                     }
