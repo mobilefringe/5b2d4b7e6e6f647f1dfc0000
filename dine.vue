@@ -188,7 +188,7 @@
                     }
                     console.log("subcategories",subcategories);
                     
-                    subcategories = _.map(subcategories, 'user').sort();
+                    subcategories = _.map(subcategories, 'name').sort();
                     subcategories.unshift('All Cuisine');
                     return subcategories;
                 },
