@@ -205,7 +205,7 @@
                     } else {
                         var find = this.findSubcategoryById;
                         var filtered = _.filter(this.allStores, function(o) {
-                            return _.indexOf(o.categories, _.toNumber(category_id)) > -1;
+                            return _.indexOf(o.subcategories, _.toNumber(category_id)) > -1;
                         });
                         this.filteredStores = filtered;
                     }
