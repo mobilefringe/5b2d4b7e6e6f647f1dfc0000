@@ -150,6 +150,8 @@
                     'storesByCategoryName',
                     'findCategoryById',
                     'findCategoryByName',
+                    'findSubcategoryById',
+                    'findSubcategoryByName',
                     'findSubcategoriesByParentID',
                     'findRepoByName'
                 ]),
