@@ -18,9 +18,9 @@ require.config({
         'vue-meta': 'https://unpkg.com/vue-meta@1.0.4/lib/vue-meta.min',
         'Fuse': 'https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.0.4/fuse.min',
         'datastore_mutation_types': 'https://mmvue.codecloudapp.com/datastore_mutation_types',
-        'datastore_getters': 'https://mmvue.codecloudapp.com/datastore_getters',
-        'datastore_actions': 'https://mmvue.codecloudapp.com/datastore_actions_test',
-        'datastore_mutations': 'https://mmvue.codecloudapp.com/datastore_mutations',
+        'datastore_getters': 'https://preview-mmvue.codecloudapp.com/datastore_getters',
+        'datastore_actions': 'https://preview-mmvue.codecloudapp.com/datastore_actions_test',
+        'datastore_mutations': 'https://preview-mmvue.codecloudapp.com/datastore_mutations',
         'datastore': 'https://mmvue.codecloudapp.com/datastore',
         'vuex-router-sync': 'https://mmvue.codecloudapp.com/vuex-router-sync',
         //append a dummy query string so requireJS doesn't auto-append .js to the end of the url
