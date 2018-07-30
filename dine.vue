@@ -171,17 +171,6 @@
                 },
                 dropDownCats() {
                     var vm = this;
-                    // var store_cats = _.filter(this.processedStores, function(o) { return _.includes(o.categories, vm.dineFilter) });
-                    
-                    // _.forEach(store_cats, function(value, key) {
-                    //     _.forEach(value.categories, function(category, key) {
-                    //         var current_category = vm.findCategoryById(category)
-                    //         if(!_.includes(cats, current_category.name) && category != vm.dineFilter) {
-                                
-                    //             cats.push(current_category.name)
-                    //         }
-                    //     });
-                    // });
                     var dining_cat =  _.find(this.processedCategories, function(o) { return o.name == "Dining"});
                     var subcategories = [];
                     if (dining_cat !== null && dining_cat !== undefined) {
