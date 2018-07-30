@@ -197,7 +197,7 @@
                     if (category_id == "All" || category_id == null || category_id == undefined) {
                         category_id = "All";
                     } else {
-                        category_id = this.findCategoryByName(category_id).id;
+                        category_id = this.findSubcategoryByName(category_id).id;
                     }
 
                     if (category_id == "All") {
