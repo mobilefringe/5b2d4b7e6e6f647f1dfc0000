@@ -180,7 +180,7 @@
                         });
                     });
                     cats = cats.sort();
-                    cats.unshift('All');
+                    cats.unshift('All Cuisine');
                     return cats;
                 },
                 filterByCategory() {
