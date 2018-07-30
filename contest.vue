@@ -16,7 +16,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <img v-if="currentContest.image_url" class="img_max" :src="currentContest.image_url" :alt="currentContest.name">
+                            <!--<img v-if="currentContest.image_url" class="img_max" :src="currentContest.image_url" :alt="currentContest.name">-->
                         </div>
                     </div> 
                     <div class="row"> 
