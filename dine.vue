@@ -187,11 +187,9 @@
                        subcategories = findSubcategoriesByParentID(dining_cat.id);
                     }
                     
-                    
-                    var cats = [];
-                    cats = subcategories.sort();
-                    cats.unshift('All Cuisine');
-                    return cats;
+                    subcategories = subcategories.sort();
+                    subcategories.unshift('All Cuisine');
+                    return subcategories;
                 },
                 filterByCategory() {
                     category_id = this.selectedCat;
