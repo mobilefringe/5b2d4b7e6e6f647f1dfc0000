@@ -67,7 +67,7 @@
         						    <div class="col-xs-12" :class="{'has-error': errors.has('agree_newsletter')}">
         						        <label class="checkbox">
                                             <input name="agree_newsletter" type="checkbox" v-model="form_data.newsletter" required>
-                                                I agree to receive newsletters from {{ property.name }}. (You can unsubscribe at anytime)
+                                            I agree to receive newsletters from {{ property.name }}. (You can unsubscribe at anytime)
                                         </label>
         						    </div>
         						    <div class="col-xs-12">
