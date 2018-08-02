@@ -159,12 +159,12 @@
                     var store_list = [];
                     var vm = this;
                     _.forEach(this.processedStores, function(value, key) {
-                        if(_.includes(value.categories, vm.dineFilter)) {
+                        // if(_.includes(value.categories, vm.dineFilter)) {
                             if (_.includes(value.image_url, 'missing')) {
                                 value.image_url = "//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1529516445000/cerritos.png";
                             }
                             store_list.push(value);
-                        }
+                        // }
                     });
                     this.filteredStores = store_list;
                     console.log("store_list",store_list);
