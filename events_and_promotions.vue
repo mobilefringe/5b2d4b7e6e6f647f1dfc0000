@@ -119,7 +119,7 @@
                             "image_url": "//codecloud.cdn.speedyrails.net/sites/5b5f2c136e6f644fcb5b0100/image/jpeg/1529532304000/insidebanner2.jpg"
                         }
                     }
-                    
+                    console.log(this.eventList)
                     if (this.eventList.length == 0) {
                         this.toggleEvents = false;
                         this.togglePromos = true;
