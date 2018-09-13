@@ -204,7 +204,8 @@
                         console.log("Error loading data: " + e.message);
                     }
                 },
-                toggleView() {
+                toggleView(item) {
+                    console.log("item", item)
                     console.log("events", this.toggleEvents, "promos", this.togglePromos)
                     if(this.promos.length == 0) {
                         this.handleButton();
