@@ -16,8 +16,8 @@
                     </div>
                     <div class="row margin_40">
         		        <div class="col-md-6 clearfix">
-        		            <button :class="{ change_color: toggleEvents }" class="animated_btn stores_btn" @click="toggleView()">Events</button>
-        		            <button :class="{ change_color: togglePromos }" class="animated_btn stores_btn" @click="toggleView()">Promotions</button>
+        		            <button :class="{ change_color: toggleEvents }" class="animated_btn stores_btn" @click="toggleView('events')">Events</button>
+        		            <button :class="{ change_color: togglePromos }" class="animated_btn stores_btn" @click="toggleView('promos')">Promotions</button>
         		        </div>
         		    </div>
                     <div v-if="toggleEvents">
