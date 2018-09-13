@@ -163,6 +163,9 @@
                     });
                     showEvents = _.orderBy(showEvents, function (o) { return o.end_date });
                     showEvents = _.groupBy(showEvents, event => (event.month));
+                    if (showEvents.length == 0) {
+                        this.togglePromos = true;
+                    }
                     return showEvents
                 },
                 promoList: function promos() {
