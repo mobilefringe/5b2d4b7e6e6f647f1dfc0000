@@ -119,6 +119,11 @@
                             "image_url": "//codecloud.cdn.speedyrails.net/sites/5b5f2c136e6f644fcb5b0100/image/jpeg/1529532304000/insidebanner2.jpg"
                         }
                     }
+                    
+                    if (this.eventList.length == 0) {
+                        this.toggleEvents = false;
+                        this.togglePromos = true;
+                    }
                     this.dataLoaded = true;
                 });
             },
@@ -163,10 +168,6 @@
                     });
                     showEvents = _.orderBy(showEvents, function (o) { return o.end_date });
                     showEvents = _.groupBy(showEvents, event => (event.month));
-                    if (showEvents.length == 0) {
-                        this.toggleEvents = false;
-                        this.togglePromos = true;
-                    }
                     return showEvents
                 },
                 promoList: function promos() {
