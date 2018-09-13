@@ -205,11 +205,10 @@
                     }
                 },
                 toggleView(item) {
-                    console.log("item", item)
-                    console.log("events", this.toggleEvents, "promos", this.togglePromos)
                     if(this.promos.length == 0) {
                         this.handleButton();
                     }
+                    
                     var selected = item;
                     if (_.includes(item, 'events')) {
                         if(!this.toggleEvents) { 
@@ -222,17 +221,6 @@
                             this.toggleEvents = false;
                         }    
                     }
-                    // if(this.toggleEvents) { 
-                    //     this.toggleEvents = false
-                    // } else {
-                    //     this.toggleEvents = true
-                    // }
-                    
-                    // if(this.togglePromos) {
-                    //     this.togglePromos = false
-                    // } else {
-                    //     this.togglePromos = true
-                    // }
                 },
                 isMultiDay(promo) {
                     var timezone = this.timezone
