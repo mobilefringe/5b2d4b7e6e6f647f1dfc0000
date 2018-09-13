@@ -205,7 +205,6 @@
                     }
                 },
                 toggleView(item) {
-                    console.log("item", item)
                     if(this.promos.length == 0) {
                         this.handleButton();
                     }
