@@ -214,10 +214,12 @@
                     if (_.includes(item, 'events')) {
                         if(!this.toggleEvents) { 
                             this.toggleEvents = true
+                            this.togglePromos = false;
                         }   
                     } else {
                         if(!this.togglePromos) {
-                            this.togglePromos = true
+                            this.togglePromos = true;
+                            this.toggleEvents = false;
                         }    
                     }
                     // if(this.toggleEvents) { 
