@@ -16,8 +16,8 @@
                     </div>
                     <div class="row margin_40">
         		        <div class="col-md-6 clearfix">
-        		            <button :class="{ change_color: toggleEvents }" class="animated_btn stores_btn" @click="toggleView(toggleEvents)">Events</button>
-        		            <button :class="{ change_color: togglePromos }" class="animated_btn stores_btn" @click="toggleView(togglePromos)">Promotions</button>
+        		            <button :class="{ change_color: toggleEvents }" class="animated_btn stores_btn" @click="toggleView()">Events</button>
+        		            <button :class="{ change_color: togglePromos }" class="animated_btn stores_btn" @click="toggleView()">Promotions</button>
         		        </div>
         		    </div>
                     <div v-if="toggleEvents">
@@ -204,7 +204,8 @@
                         console.log("Error loading data: " + e.message);
                     }
                 },
-                toggleView(item) {
+                toggleView() {
+                    console.log("events", this.toggleEvents, "promos", this.togglePromos)
                     if(this.promos.length == 0) {
                         this.handleButton();
                     }
