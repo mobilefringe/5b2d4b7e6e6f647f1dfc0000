@@ -123,6 +123,7 @@
                     if (_.isEmpty(this.eventList)) {
                         this.toggleEvents = false;
                         this.togglePromos = true;
+                        this.handleButton();
                     }
                     this.dataLoaded = true;
                 });
@@ -203,7 +204,6 @@
                     }
                 },
                 toggleView(item) {
-                    console.log(item, "promo", this.promos, "events", this.events)
                     if(this.promos.length == 0) {
                         this.handleButton();
                     }
