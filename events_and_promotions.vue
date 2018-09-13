@@ -121,8 +121,8 @@
                     }
                     console.log(this.eventList)
                     if (_.isEmpty(this.eventList)) {
-                        this.toggleEvents = false;
-                        this.togglePromos = true;
+                        // this.toggleEvents = false;
+                        // this.togglePromos = true;
                         this.handleButton();
                     }
                     this.dataLoaded = true;
