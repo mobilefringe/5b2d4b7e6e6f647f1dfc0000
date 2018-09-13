@@ -198,7 +198,7 @@
                     }
                 },
                 toggleView(item) {
-                    console.log(item)
+                    console.log(item, "promo", this.promos, "events", this.events)
                     if(this.promos.length == 0) {
                         this.handleButton();
                     }
