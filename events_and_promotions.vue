@@ -120,7 +120,7 @@
                         }
                     }
                     console.log(this.eventList)
-                    if (this.eventList.length == 0) {
+                    if (_.isEmpty(this.eventList)) {
                         this.toggleEvents = false;
                         this.togglePromos = true;
                     }
