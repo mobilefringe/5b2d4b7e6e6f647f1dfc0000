@@ -164,6 +164,7 @@
                     showEvents = _.orderBy(showEvents, function (o) { return o.end_date });
                     showEvents = _.groupBy(showEvents, event => (event.month));
                     if (showEvents.length == 0) {
+                        this.toggleEvents = false;
                         this.togglePromos = true;
                     }
                     return showEvents
