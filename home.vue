@@ -177,13 +177,16 @@
                                 banners.push(value);
                             }
                             
-                            if (value.id == 40896) {
-                                value.heading = "Coming Soon"
-                            } else if (value.id == 40873) {
-                                value.heading = "Dining"
-                            } else if (value.id == 40624) {
-                                value.heading = "Starbucks"
+                            if (value.cms_fields.subheader) {
+                                value.heading = value.cms_fields.subheader;
                             }
+                            // if (value.id == 40896) {
+                            //     value.heading = "Coming Soon"
+                            // } else if (value.id == 40873) {
+                            //     value.heading = "Dining"
+                            // } else if (value.id == 40624) {
+                            //     value.heading = "Starbucks"
+                            // }
                         }
                     });
                     banners = _.orderBy(banners, function(o) { return o.position });
