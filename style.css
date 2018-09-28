@@ -1020,6 +1020,7 @@ $anim-speed: 0.3s;
     margin-right: 20px;
 }
 /* *** EVENTS *** */
+/* *** EVENTS *** */
 .event_date_heading {
     margin-bottom: 40px;
     text-align: center;
@@ -1041,7 +1042,7 @@ $anim-speed: 0.3s;
     }
 }
 .event_dates, .event_details_dates {
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     font-size: 0.875rem;
     line-height: normal;
     span {
@@ -1049,10 +1050,10 @@ $anim-speed: 0.3s;
     }
 }
 .event_details_dates {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 .event_desc {
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     font-size: 0.8rem;
     line-height: 1.5rem;
     color: #000;
@@ -1064,16 +1065,20 @@ $anim-speed: 0.3s;
     margin-bottom: 60px;
 }
 .event_link {
-    font-size: 0.875rem;
-    line-height: normal;
-    color: $primary;
-    transition: all 0.3s ease;
+    margin-top: 30px;
+    padding: 8px 2%;
+    min-width: 200px;
+    display: inline-block;
     .fas {
         font-size: 0.75rem;
     }
-    &:hover {
-        text-decoration: underline;
-    }
+    // &:hover {
+    //     text-decoration: underline;
+    // }
+}
+.event_seperator {
+    display: none;
+    border-top: 1px solid #555;
 }
 /* *** LEASING *** */
 .leasing_btn {
