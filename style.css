@@ -784,6 +784,7 @@ a {
 }
 .change_color {
     background-color: $secondary;
+    font-weight: 700;
     color: #555;
 }
 .list-item {
