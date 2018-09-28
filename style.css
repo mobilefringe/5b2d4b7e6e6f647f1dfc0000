@@ -827,7 +827,6 @@ $anim-speed: 0.3s;
 	}
     .details {
 		padding: 0 20px 5px 20px;
-// 		color: #FFF;
 		color: $text;
 		position: absolute;
 		bottom: 0;
