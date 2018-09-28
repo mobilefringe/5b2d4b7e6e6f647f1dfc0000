@@ -1979,6 +1979,20 @@ $anim-speed: 0.3s;
     .newsletter_form {
         margin: 46px 0;
     }
+    /* *** PROMOTIONS *** */
+    .event_container {
+        margin-bottom: 30px;
+        text-align: center;
+        .event_img {
+            margin-bottom: 30px;
+        }
+        .event_seperator {
+            display: block;
+        }
+    }
+    .event_load_more {
+        margin: 0 auto;
+    }
     /* *** STORES *** */
     .stores_btn {
         margin-bottom: 20px;
