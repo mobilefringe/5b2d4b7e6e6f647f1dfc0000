@@ -22,7 +22,7 @@
                 </div>
                 <div class="main_container">
                     <div class="location_map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.6936910795293!2d-118.06205388490696!3d33.87178413466586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd2cfec51ae52d%3A0xebd219556ff48672!2sCerritos+Towne+Center!5e0!3m2!1sen!2sca!4v1547494070137" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.6936910795293!2d-118.06205388490696!3d33.87178413466586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd2cfec51ae52d%3A0xebd219556ff48672!2sCerritos+Towne+Center!5e0!3m2!1sen!2sca!4v1547494070137" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     <!--<google-map :property="property" :zoom="16"></google-map>-->
                 
                     </div>
