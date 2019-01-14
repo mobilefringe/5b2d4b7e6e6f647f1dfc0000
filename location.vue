@@ -101,6 +101,9 @@
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
+                },
+                getPropertyAddress() {
+                    console.log(this.property)
                 }
             }
         });
