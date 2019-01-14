@@ -104,7 +104,9 @@
                     }
                 },
                 propertyAddress() {
+                    var address = this.property.name + "+" + this.property.address1
                     console.log(this.property)
+                    console.log("address", address)
                 }
             }
         });
