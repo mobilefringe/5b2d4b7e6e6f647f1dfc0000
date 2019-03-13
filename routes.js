@@ -7,9 +7,9 @@ define([], function () {
         {
             path: '/center-information',
             component: view('default'),
-            // meta: {
-            //     breadcrumb: 'Center Information'
-            // },
+            meta: {
+                breadcrumb: 'Center Information'
+            },
             children: [
                 {   
                     path: '',
