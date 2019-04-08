@@ -200,6 +200,7 @@
                         }
                     });
                     banners = _.orderBy(banners, function(o) { return o.position });
+                    console.log(banners)
                     return banners
                 },
                 featuredItems() {
