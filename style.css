@@ -684,6 +684,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-color: #000;
     div {
         height: 282px;    
     }
