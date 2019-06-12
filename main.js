@@ -180,6 +180,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
             ])
         },
         methods: {
+            // cerritos
             loadData: async function() {
                 try{
                     await this.$store.dispatch('initializeApi', { site: "eastwashington", version: "v4" });
