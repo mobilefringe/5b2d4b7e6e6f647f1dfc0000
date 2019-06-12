@@ -180,10 +180,9 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
             ])
         },
         methods: {
-            // cerritos
             loadData: async function() {
                 try{
-                    await this.$store.dispatch('initializeApi', { site: "eastwashington", version: "v4" });
+                    await this.$store.dispatch('initializeApi', { site: "cerritos", version: "v4" });
                     await Promise.all([this.$store.dispatch("getData", "property")]);
                     this.property.mm_host = this.property.mm_host.replace("http:", "");
                     let results = await Promise.all([this.$store.dispatch("INITIALIZE_LOCALE"), this.$store.dispatch("getData", "hours"), this.$store.dispatch("getData", "stores")]);
