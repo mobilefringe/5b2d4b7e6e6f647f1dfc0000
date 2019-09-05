@@ -1142,7 +1142,7 @@ $anim-speed: 0.3s;
     }
 }
 .event_dates, .event_details_dates {
-    margin-bottom: 10px;
+    margin-bottom: 24px;
     font-size: 0.875rem;
     line-height: normal;
     span {
@@ -1150,7 +1150,7 @@ $anim-speed: 0.3s;
     }
 }
 .event_details_dates {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 .event_desc {
     margin-bottom: 10px;
