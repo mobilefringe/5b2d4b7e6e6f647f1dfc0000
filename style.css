@@ -443,6 +443,12 @@ a {
                 color: $secondary;
             }
         }
+        .margin_40{
+            a:hover{
+            color: #FFF;
+            text-decoration: underline;
+            }
+        }
         .footer_links {
             p {
                 margin: 0;
