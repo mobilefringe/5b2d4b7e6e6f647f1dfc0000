@@ -2149,6 +2149,9 @@ $anim-speed: 0.3s;
     .stores_btn:last-child {
         margin-right: 0;
         float: right;
+        display:flex;
+        align-items: center;
+        justify-content: center;
     }
     .store_category {
         width: calc(50% - 15px);
@@ -2310,6 +2313,9 @@ $anim-speed: 0.3s;
     }
     .grid-sizer, .stores-grid-item {
         width: 50%;
+    }
+    .stores_btn {
+        min-height: 60px;
     }
 }
 
