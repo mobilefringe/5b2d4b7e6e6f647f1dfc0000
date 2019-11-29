@@ -46,7 +46,7 @@
         					            </span>
                 					    <span class="info">
             					            <p v-if="isMultiDay(item)">{{ item.start_date | moment("MMMM D", timezone)}} to {{ item.end_date | moment("MMMM D", timezone)}}</p>
-            					            <p v-else>{{ item.start_date | moment("MMMM D", timezone)}}</span></p>
+            					            <p v-else>{{ item.start_date | moment("MMMM D", timezone)}}</p>
             					            <p>View Event Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
         					            </span>
                     				</div>
