@@ -41,7 +41,7 @@
                             <form id="contact_form" class="form-horizontal clearfix" action="form-submit" v-on:submit.prevent="validateBeforeSubmit">
                                 <div class="row">
                                     <div class="col-xs-12 col-md-6" :class="{'has-error': errors.has('name')}">
-                                        <label class="accessibility" for="name">Name</label>
+                                        <label class="visuallyhidden" for="name">Name</label>
                                         <input id="name" v-model="form_data.name" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="name" type="text" data-vv-delay="1000" placeholder="Name *">
                                         <span v-show="errors.has('name')" class="form-control-feedback">{{ errors.first('name') }}</span>
                                     </div>
