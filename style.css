@@ -759,20 +759,30 @@ a {
 .inside_page_header {
     margin-bottom: 24px;
     height: 282px;
-    background: url('//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/jpeg/1529532304000/insidebanner2.jpg');
+    background-image: url('//codecloud.cdn.speedyrails.net/sites/5b8712636e6f641ebd220000/image/jpeg/1529532304000/insidebanner2.jpg');
+    background-color: #000;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    background-color: #000;
+    &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+    }
     div {
         height: 282px;    
     }
-    h2 {
+    h1 {
         margin: 0;
         position: absolute;
         top: 50%;
         left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         color: #FFF;
         text-align: center;
@@ -784,6 +794,8 @@ a {
             position: absolute;
             left: 50%;
             bottom: -15px;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
             transform: translateX(-50%);
             content: "";
             background: #FFF;
