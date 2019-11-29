@@ -22,7 +22,10 @@
                 </div>
                 <div class="main_container">
                     <div class="location_map">
-                        <iframe :src="propertyAddress()" width="100%" height="490" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <p class="visuallyhidden">
+                            <a :href="'https://maps.google.com/?q=' + property.name">View {{ property.name }} on Google Maps</a>.
+                        </p>
+                        <iframe aria-hidden="true" :title="'Google Map for ' + property.name" :src="propertyAddress()" width="100%" height="490" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="main_container">
