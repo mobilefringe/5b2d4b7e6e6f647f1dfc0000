@@ -759,6 +759,7 @@ a {
 .inside_page_header {
     margin-bottom: 24px;
     height: 282px;
+    position: relative;
     background-image: url('//codecloud.cdn.speedyrails.net/sites/5b8712636e6f641ebd220000/image/jpeg/1529532304000/insidebanner2.jpg');
     background-color: #000;
     background-position: center top;
