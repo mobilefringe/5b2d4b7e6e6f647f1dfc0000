@@ -921,9 +921,13 @@ $anim-speed: 0.3s;
 	box-shadow: 0 0 20px 0 rgba(0,0,0,.05);
 	text-align: left;
     .details {
-		padding: 0 20px 5px 20px;
+		padding: 5px 20px;
 		width: 100%;
 		height: 100%;
+		display: flex;
+		flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
 		position: absolute;
 		top: 100%;
 		left: 0;
@@ -937,7 +941,6 @@ $anim-speed: 0.3s;
 			display: block;
 			opacity: 0;
 			position: relative;
-			top: 100px;
 			transition-property: top, opacity;
 			transition-duration: $anim-speed;
 			transition-delay: 0s;
@@ -962,17 +965,11 @@ $anim-speed: 0.3s;
 		}
     }
 	&:focus, &:hover {
-	    img {
-	        filter: blur(2px);
-	    }
 		.details, span {
 			opacity: 1;
 		}
 		.details {
 			top: 0%;
-		}
-		span {
-			top: 35%;
 		}
 		.title {
 			transition-delay: 0.15s;
@@ -2151,12 +2148,6 @@ input[type=search] {
         text-align: center;
     }
     .tile {
-	    img {
-	        filter: blur(1px);
-	    }
-	    .details {
-	        color: #FFF;
-	    }
 		&:before {
 			top: 30%;
 			opacity: 1;
