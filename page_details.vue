@@ -26,14 +26,20 @@
 </template>
 
 <script>
-    define(["Vue", "vuex"], function (Vue, Vuex) {
+    define(["Vue", "vuex", "vue-meta"], function (Vue, Vuex, Meta) {
         return Vue.component("page-details-component", {
             template: template, // the variable template will be injected,
             props: ['id'],
             data: function data() {
                 return {
                     dataLoaded: false,
-                    currentPage: null
+                    currentPage: null,
+                    meta: {
+                        meta_title: "",
+                        meta_description: "",
+                        meta_keywords: "",
+                        meta_image: ""
+                    }
                 }
             },
             created() {
@@ -46,7 +52,8 @@
             },
             computed: {
                 ...Vuex.mapGetters([
-                    'property'
+                    'property',
+                    'findMetaDataByPath'
                 ])
             },
             methods: {
@@ -56,11 +63,24 @@
                     this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/" + this.id + ".json" }).then(function (response) {
                         _this.currentPage = response.data;
                         _this.$breadcrumbs[0].meta.breadcrumb = _this.currentPage.title
+                        _this.meta = _this.findMetaDataByPath(_this.$route.path);
                         _this.dataLoaded = true;
                     }, function (error) {
                         console.error( "Could not retrieve data from server. Please check internet connection and try again.");
                         _this.$router.replace({ name: '404' });
                     });
+                }
+            },
+            metaInfo () {
+                return {
+                    title: this.meta.meta_title,
+                    meta: [
+                        { name: 'description', vmid: 'description', content: this.meta.meta_description },
+                        { name: 'keywords',  vmid: 'keywords', content: this.meta.meta_keywords },
+                        { property: 'og:title', vmid: 'og:title', content: this.meta.meta_title },
+                        { property: 'og:description', vmid: 'og:description', content: this.meta.meta_description },
+                        { property: 'og:image', vmid: 'og:image', content: this.meta.meta_image }
+                    ]
                 }
             }
         });
