@@ -15,7 +15,7 @@
                         </div>
                     </div>
                     <div class="row margin_60">
-                        <div class="col-md-3 padding_60">
+                        <div class="col-md-3">
                             <h2 class="store_list_title margin_20">Select a Category</h2>
                             <div class="map_category">
                                 <v-select 
