@@ -550,7 +550,7 @@ a {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: #000;
+            color: #FFF;
             text-align: center;
             .banner_heading {
                 padding: 10px 20px;
