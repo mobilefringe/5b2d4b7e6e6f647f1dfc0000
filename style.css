@@ -1754,6 +1754,15 @@ input[type=search] {
             text-align: center;
         }
     }
+    .position_one {
+        top: 20px;
+    }
+    .position_two {
+        top: 40px;
+    }
+    .position_three {
+        top: 60px;
+    }
     .store_phone {
         display: none;
         transition: all 0.3s ease;
