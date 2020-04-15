@@ -1651,6 +1651,34 @@ input[type=search] {
         }
     }
 }
+
+.store_details_delivery {
+    display: flex;
+    flex-wrap: wrap;
+    .delivery_option {
+        margin-bottom: 20px;
+        width: 33.33%;
+    }
+    div.delivery_option {
+        width: 33.33%;
+        position: relative;
+        span {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    }
+}
+
+.delivery-filter .dropdown-menu li {
+    // text-transform: lowercase !important;
+    text-transform: capitalize !important;
+}
+
+
 /* --- MASONRY GRID --- */
 .stores-grid {
     margin: 0 auto;
