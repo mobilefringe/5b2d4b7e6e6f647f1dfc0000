@@ -122,7 +122,7 @@
                     toggleText: "Display as List",
                     logoView: true,
                     listView: false,
-                    deliveryFilter: 9376
+                    deliveryFilter: 9389
                 }
             },
             created (){
