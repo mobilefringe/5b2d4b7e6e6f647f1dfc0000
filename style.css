@@ -1672,7 +1672,7 @@ input[type=search] {
     }
     .store_tag {
         position: absolute;
-        top: 20px;
+        // top: 20px;
         right: -1px;
         height: 23px;
         background-color: $primary;
@@ -1686,6 +1686,15 @@ input[type=search] {
             text-transform: uppercase;
             text-align: center;
         }
+    }
+    .position_one {
+        top: 20px;
+    }
+    .position_two {
+        top: 40px;
+    }
+    .position_three {
+        top: 60px;
     }
     .store_phone {
         display: none;
