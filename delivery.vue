@@ -227,7 +227,6 @@
                             } else {
                               value.curbside_store = false
                             }
-                            console.log(value)
                             
                             store_list.push(value);
                         }
