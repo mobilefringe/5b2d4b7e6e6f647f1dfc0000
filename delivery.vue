@@ -210,10 +210,15 @@
                             
                    
                             // Check if Delivery 
-                            if (_.includes(value.categories, vm.deliveryFilter)){
-                              value.delivery_store = true
+                            // if (_.includes(value.categories, vm.deliveryFilter)){
+                            //   value.delivery_store = true
+                            // } else {
+                            //   value.delivery_store = false
+                            // }
+                            if (_.includes(value.tags, 'Delivery')){
+                              value.takeout_store = true
                             } else {
-                              value.delivery_store = false
+                              value.takeout_store = false
                             }
                             // Check if Take Out
                             if (_.includes(value.tags, 'Take Out')){
