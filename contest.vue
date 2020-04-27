@@ -121,12 +121,11 @@
                 
                 this.$store.dispatch("getData", "contests").then(response => {
                     this.currentContest = this.findContestByShowOnSlug('cerritos-cerritos-towne-center-contest');
-                    console.log("contest", this.currentContest)
-                    // if (this.currentContest) {
+                    if (this.currentContest) {
                         this.dataLoaded = true;
-                    // } else {
-                    //     this.$router.replace({ path: '/' });
-                    // }
+                    } else {
+                        this.$router.replace({ path: '/' });
+                    }
                 }, error => {
                     console.error("Could not retrieve data from server. Please check internet connection and try again.");
                 });
