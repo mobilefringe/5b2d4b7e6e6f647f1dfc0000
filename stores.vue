@@ -141,16 +141,16 @@
                                                 </div>
                                             </div>
                                             
-                                            <!--<div v-else-if="(store.delivery_store && !store.takeout_store && !store.curbside_store && store.is_closed) -->
-                                            <!--    || (store.takeout_store && !store.delivery_store && !store.curbside_store && store.is_closed) -->
-                                            <!--    || (store.curbside_store && !store.delivery_store && !store.takeout_store && store.is_closed) -->
-                                            <!--    || (store.delivery_store && store.takeout_store && !store.curbside_store && store.is_closed)-->
-                                            <!--    || (store.delivery_store && !store.takeout_store && store.curbside_store && store.is_closed)-->
-                                            <!--    || (!store.delivery_store && store.takeout_store && store.curbside_store && store.is_closed)-->
-                                            <!--    || (store.delivery_store && store.takeout_store && store.curbside_store && store.is_closed)-->
-                                            <!--    || store.is_closed-->
-                                            <!--    ">-->
-                                            <div v-else-if="(store.delivery_store || store.takeout_store || store.curbside_store) && store.is_closed || store.is_closed">
+                                            <div v-else-if="(store.delivery_store && !store.takeout_store && !store.curbside_store && store.is_closed) 
+                                                || (store.takeout_store && !store.delivery_store && !store.curbside_store && store.is_closed) 
+                                                || (store.curbside_store && !store.delivery_store && !store.takeout_store && store.is_closed) 
+                                                || (store.delivery_store && store.takeout_store && !store.curbside_store && store.is_closed)
+                                                || (store.delivery_store && !store.takeout_store && store.curbside_store && store.is_closed)
+                                                || (!store.delivery_store && store.takeout_store && store.curbside_store && store.is_closed)
+                                                || (store.delivery_store && store.takeout_store && store.curbside_store && store.is_closed)
+                                                || store.is_closed
+                                                ">
+                                            <!--<div v-else-if="(store.delivery_store || store.takeout_store || store.curbside_store) && store.is_closed || store.is_closed">-->
                                             <!--<div v-else-if=" store.is_closed">-->
                                                 <div class="store_tag position_one" >
                                                     <div class="store_tag_text">Closed</div>
