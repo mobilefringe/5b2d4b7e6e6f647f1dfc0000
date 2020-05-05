@@ -74,6 +74,75 @@
             								<div class="store_tag" v-if="!store.total_published_promos && !store.is_coming_soon_store && store.is_new_store">
             									<div class="store_tag_text">New Store</div>
             								</div>
+            								
+            								
+            								
+            								
+            								<div v-if="store.delivery_store && !store.takeout_store && !store.curbside_store">
+                                                <div class="store_tag position_one">
+                                                    <div class="store_tag_text">Delivery</div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div v-if="store.takeout_store && !store.delivery_store && !store.curbside_store">
+                                                <div class="store_tag position_one">
+                                                    <div class="store_tag_text">Take Out</div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div v-if="store.curbside_store && !store.delivery_store && !store.takeout_store">
+                                                <div class="store_tag position_one">
+                                                    <div class="store_tag_text">Curbside</div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div v-if="store.delivery_store && store.takeout_store && !store.curbside_store">
+                                                <div class="store_tag position_one" >
+                                                    <div class="store_tag_text">Delivery</div>
+                                                </div>
+                                                
+                                                <div class="store_tag position_two" >
+                                                    <div class="store_tag_text">Take Out</div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div v-if="store.delivery_store && !store.takeout_store && store.curbside_store">
+                                                <div class="store_tag position_one" >
+                                                    <div class="store_tag_text">Delivery</div>
+                                                </div>
+                                                
+                                                <div class="store_tag position_two" >
+                                                    <div class="store_tag_text">Curbside</div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div v-if="!store.delivery_store && store.takeout_store && store.curbside_store">
+                                                <div class="store_tag position_one" >
+                                                    <div class="store_tag_text">Take Out</div>
+                                                </div>
+                                                
+                                                <div class="store_tag position_two" >
+                                                    <div class="store_tag_text">Curbside</div>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                            <div v-if="store.delivery_store && store.takeout_store && store.curbside_store">
+                                                <div class="store_tag position_one" >
+                                                    <div class="store_tag_text">Delivery</div>
+                                                </div>
+                                                
+                                                <div class="store_tag position_two" >
+                                                    <div class="store_tag_text">Take Out</div>
+                                                </div>
+                                                <div class="store_tag position_three" >
+                                                    <div class="store_tag_text">Curbside</div>
+                                                </div>
+                                            </div>
+            								
+            								
+            								
+            								
             								<div class="store_details">
             								    <div class="store_text"><h2>{{ store.name }}</h2></div>    
             								</div>
@@ -199,6 +268,26 @@
                             } else {
                               value.no_store_logo = false;
                             }
+                            
+                            // check delivery related tags
+                            if (_.includes(value.tags, 'Delivery')){
+                              value.delivery_store = true
+                            } else {
+                              value.delivery_store = false
+                            }
+                            // Check if Take Out
+                            if (_.includes(value.tags, 'Take Out')){
+                              value.takeout_store = true
+                            } else {
+                              value.takeout_store = false
+                            }
+                            // Check if Curbside
+                            if (_.includes(value.tags, 'Curbside')){
+                              value.curbside_store = true
+                            } else {
+                              value.curbside_store = false
+                            }
+                            
                             store_list.push(value);
                         }
                     });
