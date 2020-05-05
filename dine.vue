@@ -320,17 +320,14 @@
                         }
                     });
                     this.filteredStores = store_list;
-                    console.log("store_list",store_list);
                     return store_list
                 },
                 dropDownCats() {
                     var vm = this;
                     var dining_cat =  _.find(this.processedCategories, function(o) { return o.name == "Dining"});
-                    console.log(dining_cat)
                     var subcategories = [];
                     if (dining_cat !== null && dining_cat !== undefined) {
                        subcategories = vm.findSubcategoriesByParentID(dining_cat.id);
-                       console.log(subcategories, 'hello')
                     }
                     console.log(subcategories)
                     subcategories = _.map(subcategories, 'name').sort();
