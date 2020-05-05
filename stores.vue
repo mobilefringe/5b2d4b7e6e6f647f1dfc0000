@@ -294,7 +294,12 @@
                             } else {
                               value.curbside_store = false
                             }
-                            
+                            // Check if Closed Tag
+                            if (_.includes(value.tags, 'Closed')){
+                              value.is_closed = true
+                            } else {
+                              value.is_closed = false
+                            }
                             store_list.push(value);
                         }
                     });
