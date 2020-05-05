@@ -148,7 +148,7 @@
                                                 || (store.delivery_store && !store.takeout_store && store.curbside_store && store.is_closed)
                                                 || (!store.delivery_store && store.takeout_store && store.curbside_store && store.is_closed)
                                                 || (store.delivery_store && store.takeout_store && store.curbside_store && store.is_closed)
-                                                || store_is_closed
+                                                || store.is_closed
                                                 ">
                                                 <div class="store_tag position_one" >
                                                     <div class="store_tag_text">Closed</div>
