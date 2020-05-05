@@ -141,9 +141,15 @@
                                                 </div>
                                             </div>
                                             
-                                            <div v-else-if="(store.delivery_store || store.takeout_store || store.curbside_store && store.is_closed) || store.is_closed">
+                                            <div v-else-if="store.is_closed">
                                                 <div class="store_tag position_one" >
                                                     <div class="store_tag_text">Closed</div>
+                                                </div>
+                                                <div class="store_tag position_two" >
+                                                    <!--<div class="store_tag_text">Take Out</div>-->
+                                                </div>
+                                                <div class="store_tag position_three" >
+                                                    <!--<div class="store_tag_text">Curbside</div>-->
                                                 </div>
                                             </div>
             								
