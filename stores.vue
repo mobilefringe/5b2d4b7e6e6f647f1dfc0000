@@ -78,6 +78,13 @@
             								</div>
             								
             								
+            					
+                                            <div class="store_tag position_one" v-if="store.is_closed">
+                                                <div class="store_tag_text">Closed</div>
+                                            </div>
+                          
+            								
+            								
             								
             								<div v-if="store.delivery_store && !store.takeout_store && !store.curbside_store">
             								    <div v-if="store.is_closed">
@@ -189,7 +196,6 @@
                                                         <div class="store_tag_text">Curbside</div>
                                                     </div>
             								    </div>
-                                                
                                             </div>
                                             
                                         
