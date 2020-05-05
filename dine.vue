@@ -140,7 +140,7 @@
                                                 </div>
                                             </div>
                                             
-                                            <div v-if="store.delivery_store && store.is_closed || !store.delivery_store && store.is_closed ">
+                                            <div v-if="(store.delivery_store || store.takeout_store || store.curbside_store && store.is_closed) || store.is_closed">
                                                 <div class="store_tag position_one" >
                                                     <div class="store_tag_text">Closed</div>
                                                 </div>
