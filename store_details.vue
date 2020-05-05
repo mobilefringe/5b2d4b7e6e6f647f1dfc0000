@@ -175,9 +175,9 @@
                             hours.todays_hours = false;
                         }
                         storeHours.push(hours);
-                        console.log(storeHours)
                     });
                     this.storeHours = _.sortBy(storeHours, function(o) { return o.day_of_week });
+                    console.log(this.storeHours)
                     
                      // DELIVERY
                     var delivery_category = 9389;
