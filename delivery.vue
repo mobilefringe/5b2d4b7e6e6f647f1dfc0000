@@ -128,6 +128,12 @@
                                                 </div>
                                             </div>
                                             
+                                            <div v-if="(store.delivery_store || store.takeout_store || store.curbside_store && store.is_closed) || store.is_closed">
+                                                <div class="store_tag position_one" >
+                                                    <div class="store_tag_text">Closed</div>
+                                                </div>
+                                            </div>
+                                            
                                             <div class="store_details">
                                                 <div class="store_text"><h2>{{ store.name }}</h2></div>    
                                             </div>
@@ -252,6 +258,12 @@
                               value.curbside_store = true
                             } else {
                               value.curbside_store = false
+                            }
+                            // Check if Closed Tag
+                            if (_.includes(value.tags, 'Closed')){
+                              value.is_closed = true
+                            } else {
+                              value.is_closed = false
                             }
                             
                             store_list.push(value);
