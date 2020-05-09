@@ -182,7 +182,7 @@
                     <!--                        </div>-->
                     
                                             <div v-if="store.tags">
-            								    <div v-for="(tag, index) in store.tags" v-if="index < 3">
+            								    <div v-for="(tag, index) in store.tags">
             								        <div class="store_tag position_one" >
                                                         <div class="store_tag_text">{{tag[0}}</div>
                                                     </div>
