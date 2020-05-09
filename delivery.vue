@@ -182,8 +182,8 @@
                     <!--                        </div>-->
                     
                                             <div v-if="store.tags">
-            								    <div v-for="tag in store.tags">
-            								        <div class="store_tag" >
+            								    <div>
+            								        <div class="store_tag" v-for="(tag, index) in store.tags">
                                                         <div class="store_tag_text">{{ tag }}</div>
                                                     </div>
                                                     
