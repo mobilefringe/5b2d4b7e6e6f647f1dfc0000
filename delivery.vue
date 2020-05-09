@@ -66,6 +66,120 @@
                                                 </div>
                                             </div>
                                             
+                    <!--                        <div class="store_tag position_one" v-if="store.is_closed">-->
+                    <!--                            <div class="store_tag_text">Closed</div>-->
+                    <!--                        </div>-->
+            								<!--<div v-if="store.delivery_store && !store.takeout_store && !store.curbside_store">-->
+            								<!--    <div v-if="store.is_closed">-->
+                    <!--                                <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Closed</div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+            								<!--    <div v-else>-->
+            								<!--        <div class="store_tag position_one">-->
+                    <!--                                    <div class="store_tag_text">Delivery</div>-->
+                    <!--                                </div>-->
+            								<!--    </div>-->
+                    <!--                        </div>-->
+                                            
+                    <!--                        <div v-else-if="store.takeout_store && !store.delivery_store && !store.curbside_store">-->
+                    <!--                            <div v-if="store.is_closed">-->
+                    <!--                                <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Closed</div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+            								<!--    <div v-else>-->
+            								<!--        <div class="store_tag position_one">-->
+                    <!--                                    <div class="store_tag_text">Take Out</div>-->
+                    <!--                                </div>-->
+            								<!--    </div>-->
+                    <!--                        </div>-->
+                                            
+                    <!--                        <div v-else-if="store.curbside_store && !store.delivery_store && !store.takeout_store">-->
+                    <!--                            <div v-if="store.is_closed">-->
+                    <!--                                <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Closed</div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+            								<!--    <div v-else>-->
+            								<!--        <div class="store_tag position_one">-->
+                    <!--                                    <div class="store_tag_text">Curbside</div>-->
+                    <!--                                </div>-->
+            								<!--    </div>-->
+                    <!--                        </div>-->
+                                            
+                    <!--                        <div v-else-if="store.delivery_store && store.takeout_store && !store.curbside_store">-->
+                    <!--                            <div v-if="store.is_closed">-->
+                    <!--                                <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Closed</div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+                    <!--                            <div v-else>-->
+                    <!--                                <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Delivery</div>-->
+                    <!--                                </div>-->
+                                                    
+                    <!--                                <div class="store_tag position_two" >-->
+                    <!--                                    <div class="store_tag_text">Take Out</div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+                                                
+                    <!--                        </div>-->
+                                            
+                    <!--                        <div v-else-if="store.delivery_store && !store.takeout_store && store.curbside_store">-->
+                    <!--                            <div v-if="store.is_closed">-->
+                    <!--                                <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Closed</div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+            								<!--    <div v-else>-->
+            								<!--        <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Delivery</div>-->
+                    <!--                                </div>-->
+                                                    
+                    <!--                                <div class="store_tag position_two" >-->
+                    <!--                                    <div class="store_tag_text">Curbside</div>-->
+                    <!--                                </div>-->
+            								<!--    </div>-->
+                    <!--                        </div>-->
+                                            
+                    <!--                        <div v-else-if="!store.delivery_store && store.takeout_store && store.curbside_store">-->
+                    <!--                            <div v-if="store.is_closed">-->
+                    <!--                                <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Closed</div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+            								<!--    <div v-else>-->
+            								<!--        <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Take Out</div>-->
+                    <!--                                </div>-->
+                                                    
+                    <!--                                <div class="store_tag position_two" >-->
+                    <!--                                    <div class="store_tag_text">Curbside</div>-->
+                    <!--                                </div>-->
+            								<!--    </div>-->
+                    <!--                        </div>-->
+                                            
+                                            
+                    <!--                        <div v-else-if="store.delivery_store && store.takeout_store && store.curbside_store">-->
+                    <!--                            <div v-if="store.is_closed">-->
+                    <!--                                <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Closed</div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+            								<!--    <div v-else>-->
+            								<!--        <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Delivery</div>-->
+                    <!--                                </div>-->
+                                                    
+                    <!--                                <div class="store_tag position_two" >-->
+                    <!--                                    <div class="store_tag_text">Take Out</div>-->
+                    <!--                                </div>-->
+                    <!--                                <div class="store_tag position_three" >-->
+                    <!--                                    <div class="store_tag_text">Curbside</div>-->
+                    <!--                                </div>-->
+            								<!--    </div>-->
+                    <!--                        </div>-->
                     
                                             <div v-if="store.tags">
             								    <div>
@@ -183,35 +297,40 @@
                             // } else {
                             //   value.delivery_store = false
                             // }
-                            // if (_.includes(value.tags, 'Delivery')){
-                            //   value.delivery_store = true
-                            // } else {
-                            //   value.delivery_store = false
-                            // }
-                            // // Check if Take Out
-                            // if (_.includes(value.tags, 'Take Out')){
-                            //   value.takeout_store = true
-                            // } else {
-                            //   value.takeout_store = false
-                            // }
-                            // // Check if Curbside
-                            // if (_.includes(value.tags, 'Curbside')){
-                            //   value.curbside_store = true
-                            // } else {
-                            //   value.curbside_store = false
-                            // }
-                            // // Check if Closed Tag
-                            // if (_.includes(value.tags, 'Closed')){
-                            //   value.is_closed = true
-                            // } else {
-                            //   value.is_closed = false
-                            // }
+                            if (_.includes(value.tags, 'Delivery')){
+                              value.delivery_store = true
+                            } else {
+                              value.delivery_store = false
+                            }
+                            // Check if Take Out
+                            if (_.includes(value.tags, 'Take Out')){
+                              value.takeout_store = true
+                            } else {
+                              value.takeout_store = false
+                            }
+                            // Check if Curbside
+                            if (_.includes(value.tags, 'Curbside')){
+                              value.curbside_store = true
+                            } else {
+                              value.curbside_store = false
+                            }
+                            // Check if Closed Tag
+                            if (_.includes(value.tags, 'Closed')){
+                              value.is_closed = true
+                            } else {
+                              value.is_closed = false
+                            }
                             
                             store_list.push(value);
                         }
                     });
                     
+                    
+                    
                     this.filteredStores = store_list;
+                    
+                    console.log(this.filteredStores)
+                    
                     return store_list
                 },
                 dropDownCats() {
