@@ -1757,13 +1757,16 @@ input[type=search] {
             text-align: center;
         }
     }
-    .position_one {
+    .position_one,
+    .store_tag:first-child {
         top: 5px;
     }
-    .position_two {
+    .position_two,
+    .store_tag:nth-child(2) {
         top: 30px;
     }
-    .position_three {
+    .position_three,
+    .store_tag:nth-child(3) {
         top: 55px;
     }
     .store_phone {
