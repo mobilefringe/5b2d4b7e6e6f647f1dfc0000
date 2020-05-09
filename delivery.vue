@@ -187,10 +187,10 @@
                                                         <div class="store_tag_text">{{tag }}</div>
                                                     </div>
                                                     
-                                                    <!--<div v-if="tag[1]" class="store_tag position_two" >-->
+                                                    <!--<div v-if="" class="store_tag position_two" >-->
                                                     <!--    <div class="store_tag_text">{{tag[1]}}</div>-->
                                                     <!--</div>-->
-                                                    <!--<div v-if="tag[2]" class="store_tag position_three" >-->
+                                                    <!--<div v-if="" class="store_tag position_three" >-->
                                                     <!--    <div class="store_tag_text">{{tag[2]}}</div>-->
                                                     <!--</div>-->
             								    </div>
