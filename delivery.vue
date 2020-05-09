@@ -66,135 +66,135 @@
                                                 </div>
                                             </div>
                                             
-                                            <div class="store_tag position_one" v-if="store.is_closed">
-                                                <div class="store_tag_text">Closed</div>
-                                            </div>
-            								<div v-if="store.delivery_store && !store.takeout_store && !store.curbside_store">
-            								    <div v-if="store.is_closed">
-                                                    <div class="store_tag position_one" >
-                                                        <div class="store_tag_text">Closed</div>
-                                                    </div>
-                                                </div>
-            								    <div v-else>
-            								        <div class="store_tag position_one">
-                                                        <div class="store_tag_text">Delivery</div>
-                                                    </div>
-            								    </div>
-                                            </div>
+                    <!--                        <div class="store_tag position_one" v-if="store.is_closed">-->
+                    <!--                            <div class="store_tag_text">Closed</div>-->
+                    <!--                        </div>-->
+            								<!--<div v-if="store.delivery_store && !store.takeout_store && !store.curbside_store">-->
+            								<!--    <div v-if="store.is_closed">-->
+                    <!--                                <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Closed</div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+            								<!--    <div v-else>-->
+            								<!--        <div class="store_tag position_one">-->
+                    <!--                                    <div class="store_tag_text">Delivery</div>-->
+                    <!--                                </div>-->
+            								<!--    </div>-->
+                    <!--                        </div>-->
                                             
-                                            <div v-else-if="store.takeout_store && !store.delivery_store && !store.curbside_store">
-                                                <div v-if="store.is_closed">
-                                                    <div class="store_tag position_one" >
-                                                        <div class="store_tag_text">Closed</div>
-                                                    </div>
-                                                </div>
-            								    <div v-else>
-            								        <div class="store_tag position_one">
-                                                        <div class="store_tag_text">Take Out</div>
-                                                    </div>
-            								    </div>
-                                            </div>
+                    <!--                        <div v-else-if="store.takeout_store && !store.delivery_store && !store.curbside_store">-->
+                    <!--                            <div v-if="store.is_closed">-->
+                    <!--                                <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Closed</div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+            								<!--    <div v-else>-->
+            								<!--        <div class="store_tag position_one">-->
+                    <!--                                    <div class="store_tag_text">Take Out</div>-->
+                    <!--                                </div>-->
+            								<!--    </div>-->
+                    <!--                        </div>-->
                                             
-                                            <div v-else-if="store.curbside_store && !store.delivery_store && !store.takeout_store">
-                                                <div v-if="store.is_closed">
-                                                    <div class="store_tag position_one" >
-                                                        <div class="store_tag_text">Closed</div>
-                                                    </div>
-                                                </div>
-            								    <div v-else>
-            								        <div class="store_tag position_one">
-                                                        <div class="store_tag_text">Curbside</div>
-                                                    </div>
-            								    </div>
-                                            </div>
+                    <!--                        <div v-else-if="store.curbside_store && !store.delivery_store && !store.takeout_store">-->
+                    <!--                            <div v-if="store.is_closed">-->
+                    <!--                                <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Closed</div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+            								<!--    <div v-else>-->
+            								<!--        <div class="store_tag position_one">-->
+                    <!--                                    <div class="store_tag_text">Curbside</div>-->
+                    <!--                                </div>-->
+            								<!--    </div>-->
+                    <!--                        </div>-->
                                             
-                                            <div v-else-if="store.delivery_store && store.takeout_store && !store.curbside_store">
-                                                <div v-if="store.is_closed">
-                                                    <div class="store_tag position_one" >
-                                                        <div class="store_tag_text">Closed</div>
-                                                    </div>
-                                                </div>
-                                                <div v-else>
-                                                    <div class="store_tag position_one" >
-                                                        <div class="store_tag_text">Delivery</div>
-                                                    </div>
+                    <!--                        <div v-else-if="store.delivery_store && store.takeout_store && !store.curbside_store">-->
+                    <!--                            <div v-if="store.is_closed">-->
+                    <!--                                <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Closed</div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+                    <!--                            <div v-else>-->
+                    <!--                                <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Delivery</div>-->
+                    <!--                                </div>-->
                                                     
-                                                    <div class="store_tag position_two" >
-                                                        <div class="store_tag_text">Take Out</div>
-                                                    </div>
-                                                </div>
+                    <!--                                <div class="store_tag position_two" >-->
+                    <!--                                    <div class="store_tag_text">Take Out</div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
                                                 
-                                            </div>
+                    <!--                        </div>-->
                                             
-                                            <div v-else-if="store.delivery_store && !store.takeout_store && store.curbside_store">
-                                                <div v-if="store.is_closed">
-                                                    <div class="store_tag position_one" >
-                                                        <div class="store_tag_text">Closed</div>
-                                                    </div>
-                                                </div>
-            								    <div v-else>
-            								        <div class="store_tag position_one" >
-                                                        <div class="store_tag_text">Delivery</div>
-                                                    </div>
+                    <!--                        <div v-else-if="store.delivery_store && !store.takeout_store && store.curbside_store">-->
+                    <!--                            <div v-if="store.is_closed">-->
+                    <!--                                <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Closed</div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+            								<!--    <div v-else>-->
+            								<!--        <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Delivery</div>-->
+                    <!--                                </div>-->
                                                     
-                                                    <div class="store_tag position_two" >
-                                                        <div class="store_tag_text">Curbside</div>
-                                                    </div>
-            								    </div>
-                                            </div>
+                    <!--                                <div class="store_tag position_two" >-->
+                    <!--                                    <div class="store_tag_text">Curbside</div>-->
+                    <!--                                </div>-->
+            								<!--    </div>-->
+                    <!--                        </div>-->
                                             
-                                            <div v-else-if="!store.delivery_store && store.takeout_store && store.curbside_store">
-                                                <div v-if="store.is_closed">
-                                                    <div class="store_tag position_one" >
-                                                        <div class="store_tag_text">Closed</div>
-                                                    </div>
-                                                </div>
-            								    <div v-else>
-            								        <div class="store_tag position_one" >
-                                                        <div class="store_tag_text">Take Out</div>
-                                                    </div>
+                    <!--                        <div v-else-if="!store.delivery_store && store.takeout_store && store.curbside_store">-->
+                    <!--                            <div v-if="store.is_closed">-->
+                    <!--                                <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Closed</div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+            								<!--    <div v-else>-->
+            								<!--        <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Take Out</div>-->
+                    <!--                                </div>-->
                                                     
-                                                    <div class="store_tag position_two" >
-                                                        <div class="store_tag_text">Curbside</div>
-                                                    </div>
-            								    </div>
-                                            </div>
+                    <!--                                <div class="store_tag position_two" >-->
+                    <!--                                    <div class="store_tag_text">Curbside</div>-->
+                    <!--                                </div>-->
+            								<!--    </div>-->
+                    <!--                        </div>-->
                                             
                                             
-                                            <div v-else-if="store.delivery_store && store.takeout_store && store.curbside_store">
-                                                <div v-if="store.is_closed">
-                                                    <div class="store_tag position_one" >
-                                                        <div class="store_tag_text">Closed</div>
-                                                    </div>
-                                                </div>
-            								    <div v-else>
-            								        <div class="store_tag position_one" >
-                                                        <div class="store_tag_text">Delivery</div>
-                                                    </div>
+                    <!--                        <div v-else-if="store.delivery_store && store.takeout_store && store.curbside_store">-->
+                    <!--                            <div v-if="store.is_closed">-->
+                    <!--                                <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Closed</div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+            								<!--    <div v-else>-->
+            								<!--        <div class="store_tag position_one" >-->
+                    <!--                                    <div class="store_tag_text">Delivery</div>-->
+                    <!--                                </div>-->
                                                     
-                                                    <div class="store_tag position_two" >
-                                                        <div class="store_tag_text">Take Out</div>
-                                                    </div>
-                                                    <div class="store_tag position_three" >
-                                                        <div class="store_tag_text">Curbside</div>
-                                                    </div>
-            								    </div>
-                                            </div>
+                    <!--                                <div class="store_tag position_two" >-->
+                    <!--                                    <div class="store_tag_text">Take Out</div>-->
+                    <!--                                </div>-->
+                    <!--                                <div class="store_tag position_three" >-->
+                    <!--                                    <div class="store_tag_text">Curbside</div>-->
+                    <!--                                </div>-->
+            								<!--    </div>-->
+                    <!--                        </div>-->
                     
-                        <!--                    <div v-if="store.tags">-->
-            								    <!--<div v-for="(tag, index) in store.tags">-->
-            								    <!--    <div class="store_tag position_one" >-->
-                        <!--                                <div class="store_tag_text">{{tag[0}}</div>-->
-                        <!--                            </div>-->
+                                            <div v-if="store.tags">
+            								    <div v-for="(tag, index) in store.tags">
+            								        <div v-if="tag[0]" class="store_tag position_one" >
+                                                        <div class="store_tag_text">{{tag[0]}}</div>
+                                                    </div>
                                                     
-                        <!--                            <div class="store_tag position_two" >-->
-                        <!--                                <div class="store_tag_text">{{tag[1}}</div>-->
-                        <!--                            </div>-->
-                        <!--                            <div class="store_tag position_three" >-->
-                        <!--                                <div class="store_tag_text">{{tag[2}}</div>-->
-                        <!--                            </div>-->
-            								    <!--</div>-->
-                        <!--                    </div>-->
+                                                    <div v-if="tag[1]" class="store_tag position_two" >
+                                                        <div class="store_tag_text">{{tag[1]}}</div>
+                                                    </div>
+                                                    <div v-if="tag[2]" class="store_tag position_three" >
+                                                        <div class="store_tag_text">{{tag[2]}}</div>
+                                                    </div>
+            								    </div>
+                                            </div>
                                             
                                             <div class="store_details">
                                                 <div class="store_text"><h2>{{ store.name }}</h2></div>    
