@@ -211,12 +211,7 @@
                         }
                     });
                     
-                    
-                    
                     this.filteredStores = store_list;
-                    
-                    console.log(this.filteredStores)
-                    
                     return store_list
                 },
                 dropDownCats() {
