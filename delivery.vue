@@ -183,11 +183,8 @@
                     
                                             <div v-if="store.tags">
             								    <div v-for="(tag, index) in store.tags">
-            								        <!--<div class="store_tag" >-->
-                            <!--                            <div class="store_tag_text">{{ tag }}</div>-->
-                            <!--                        </div>-->
-                                                    <div class="store_tag store_tag_text" >
-                                                        {{ tag }}
+            								        <div class="store_tag" >
+                                                        <div class="store_tag_text">{{ tag }}</div>
                                                     </div>
                                                     
                                                     <!--<div v-if="" class="store_tag position_two" >-->
