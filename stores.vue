@@ -209,24 +209,6 @@
                               value.no_store_logo = false;
                             }
                             
-                            // check delivery related tags
-                            if (_.includes(value.tags, 'Delivery')){
-                              value.delivery_store = true
-                            } else {
-                              value.delivery_store = false
-                            }
-                            // Check if Take Out
-                            if (_.includes(value.tags, 'Take Out')){
-                              value.takeout_store = true
-                            } else {
-                              value.takeout_store = false
-                            }
-                            // Check if Curbside
-                            if (_.includes(value.tags, 'Curbside')){
-                              value.curbside_store = true
-                            } else {
-                              value.curbside_store = false
-                            }
                             
                             store_list.push(value);
                         }
