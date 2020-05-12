@@ -303,29 +303,29 @@
                                 value.image_url = "//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1529516445000/cerritos.png";
                             }
                             // check delivery related tags
-                            if (_.includes(value.tags, 'Delivery')){
-                              value.delivery_store = true
-                            } else {
-                              value.delivery_store = false
-                            }
-                            // Check if Take Out
-                            if (_.includes(value.tags, 'Take Out')){
-                              value.takeout_store = true
-                            } else {
-                              value.takeout_store = false
-                            }
-                            // Check if Curbside
-                            if (_.includes(value.tags, 'Curbside')){
-                              value.curbside_store = true
-                            } else {
-                              value.curbside_store = false
-                            }
-                            // Check if Closed Tag
-                            if (_.includes(value.tags, 'Closed')){
-                              value.is_closed = true
-                            } else {
-                              value.is_closed = false
-                            }
+                            // if (_.includes(value.tags, 'Delivery')){
+                            //   value.delivery_store = true
+                            // } else {
+                            //   value.delivery_store = false
+                            // }
+                            // // Check if Take Out
+                            // if (_.includes(value.tags, 'Take Out')){
+                            //   value.takeout_store = true
+                            // } else {
+                            //   value.takeout_store = false
+                            // }
+                            // // Check if Curbside
+                            // if (_.includes(value.tags, 'Curbside')){
+                            //   value.curbside_store = true
+                            // } else {
+                            //   value.curbside_store = false
+                            // }
+                            // // Check if Closed Tag
+                            // if (_.includes(value.tags, 'Closed')){
+                            //   value.is_closed = true
+                            // } else {
+                            //   value.is_closed = false
+                            // }
                             store_list.push(value);
                         }
                     });
