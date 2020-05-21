@@ -208,7 +208,7 @@
                             } else {
                               value.no_store_logo = false;
                             }
-                            
+                            console.log("store", value)
                             // Check if it has special tags
         value.flag = null;
         //                     if (value.is_new_store) {
