@@ -208,53 +208,7 @@
                             } else {
                               value.no_store_logo = false;
                             }
-                            console.log("store", value)
-                            // Check if it has special tags
-        value.flag = null;
-        //                     if (value.is_new_store) {
-        //                         value.flag = "New";
-        //                     } else if (value.is_coming_soon_store) {
-        //                         value.flag = "Coming Soon";
-        //                     } else if (value.is_relocated_store) {
-        //                         value.flag = "Relocated";
-        //                     } else if (value.total_published_promos) {
-        //                         value.flag = "Promotion";
-        //                     } else if (_.some(value.tags, function(tag) {
-        //     return _.lowerCase(tag) === _.lowerCase("BY APPT");
-        //   })
-        // ) {
-        //   value.flag = "By Appt";
-        // } else if (
-        //   _.some(value.tags, function(tag) {
-        //     return _.lowerCase(tag) === _.lowerCase("PICK UP ONLY");
-        //   })
-        // ) {
-        //   value.flag = "Pick-up Only";
-        // } else if (
-        //   _.some(value.tags, function(tag) {
-        //     return _.lowerCase(tag) === _.lowerCase("OPEN");
-        //   })
-        // ) {
-        //   value.flag = "Open";
-        // } else if (
-        //   _.some(value.tags, function(tag) {
-        //     return _.lowerCase(tag) === _.lowerCase("CURBSIDE");
-        //   })
-        // ) {
-        //   value.flag = "Curbside";
-        // } else if (
-        //   _.some(value.tags, function(tag) {
-        //     return _.lowerCase(tag) === _.lowerCase("Seasonal");
-        //   })
-        // ) {
-        //   value.flag = "Seasonal";
-        // } else if (
-        //   _.some(value.tags, function(tag) {
-        //     return _.lowerCase(tag) === _.lowerCase("Pop Up");
-        //   })
-        // ) {
-        //   value.flag = "Pop-Up";
-        // }
+                            
                             
                             store_list.push(value);
                         }
